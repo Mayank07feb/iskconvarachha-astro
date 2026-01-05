@@ -1,0 +1,359 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { seoData } from "../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.about;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <!-- Hero Section -->
+  <section
+    class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-background-light via-white to-background-section"
+  >
+    <div class="absolute inset-0 opacity-5">
+      <div
+        class="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl"
+      >
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-12">
+        <div class="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
+          <p class="text-primary font-semibold text-sm">
+            About ISKCON Varachha
+          </p>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          <span class="gradient-text">Sri Sri Radha Gopal Ji Temple</span>
+        </h1>
+        <p class="text-lg text-brand-gray max-w-3xl mx-auto">
+          A beacon of spiritual wisdom and devotion in the heart of Surat,
+          Gujarat
+        </p>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden shadow-2xl">
+        <img
+          src="https://images.unsplash.com/photo-1582659553576-f4b64b6ec391?w=1200"
+          alt="ISKCON Temple"
+          class="w-full h-[500px] object-cover"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-bold text-brand-brown mb-6">Our Story</h2>
+          <p class="text-brand-gray leading-relaxed mb-4">
+            ISKCON Varachha, Surat, is a spiritual sanctuary dedicated to
+            spreading the timeless teachings of the Bhagavad Gita and the
+            practice of Krishna consciousness. Founded on the principles taught
+            by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, our temple
+            serves as a center for spiritual growth, cultural preservation, and
+            community service.
+          </p>
+          <p class="text-brand-gray leading-relaxed mb-4">
+            Since our establishment, we have been committed to providing a
+            peaceful haven where devotees and spiritual seekers can deepen their
+            connection with the Supreme Lord Sri Krishna through kirtan, prayer,
+            study, and service.
+          </p>
+          <p class="text-brand-gray leading-relaxed">
+            Our temple not only serves as a place of worship but also as a
+            community center that promotes vegetarianism, yoga, meditation, and
+            the study of ancient Vedic scriptures.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div
+            class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-6 text-center"
+          >
+            <div class="text-4xl font-bold text-primary mb-2">1000+</div>
+            <p class="text-brand-gray">Active Devotees</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-6 text-center"
+          >
+            <div class="text-4xl font-bold text-secondary mb-2">50+</div>
+            <p class="text-brand-gray">Daily Programs</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-6 text-center"
+          >
+            <div class="text-4xl font-bold text-secondary mb-2">365</div>
+            <p class="text-brand-gray">Days of Service</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-6 text-center"
+          >
+            <div class="text-4xl font-bold text-primary mb-2">24/7</div>
+            <p class="text-brand-gray">Temple Open</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Mission & Vision -->
+  <section
+    class="py-20 bg-gradient-to-br from-background-light to-background-section"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Mission -->
+        <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-primary to-brand-saffron rounded-2xl flex items-center justify-center mb-6"
+          >
+            <span class="material-icons text-white text-3xl">flag</span>
+          </div>
+          <h3 class="text-3xl font-bold text-brand-brown mb-4">Our Mission</h3>
+          <ul class="space-y-3 text-brand-gray">
+            <li class="flex items-start">
+              <span class="material-icons text-primary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span
+                >To spread the teachings of Lord Krishna and the Bhagavad Gita</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-primary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span
+                >To provide spiritual guidance and support to all seekers</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-primary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>To promote vegetarianism and compassionate living</span>
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-primary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>To serve the community through prasadam distribution</span>
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-primary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>To preserve and propagate Vedic culture and values</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Vision -->
+        <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-secondary to-brand-maroon rounded-2xl flex items-center justify-center mb-6"
+          >
+            <span class="material-icons text-white text-3xl">visibility</span>
+          </div>
+          <h3 class="text-3xl font-bold text-brand-brown mb-4">Our Vision</h3>
+          <ul class="space-y-3 text-brand-gray">
+            <li class="flex items-start">
+              <span class="material-icons text-secondary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span
+                >To establish a world-class Vedic cultural center in Surat</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-secondary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span
+                >To create a spiritual sanctuary for thousands of devotees</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-secondary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span
+                >To inspire the youth through Vedic education and values</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-secondary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>To build a community based on love, peace, and harmony</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-secondary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>To make Krishna consciousness accessible to all</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder Acharya -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          <span class="gradient-text">Founder Acharya</span>
+        </h2>
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"
+        >
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="rounded-3xl overflow-hidden shadow-2xl">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600"
+            alt="Srila Prabhupada"
+            class="w-full h-[500px] object-cover"
+          />
+        </div>
+
+        <div>
+          <h3 class="text-3xl font-bold text-brand-brown mb-4">
+            His Divine Grace A.C. Bhaktivedanta Swami Prabhupada
+          </h3>
+          <p class="text-brand-gray leading-relaxed mb-4">
+            His Divine Grace A.C. Bhaktivedanta Swami Prabhupada (1896-1977) is
+            the founder-acharya of the International Society for Krishna
+            Consciousness (ISKCON). At the age of 69, he traveled from India to
+            America with the mission of spreading Krishna consciousness
+            throughout the world.
+          </p>
+          <p class="text-brand-gray leading-relaxed mb-4">
+            Srila Prabhupada translated over 80 volumes of Vedic scriptures into
+            English, including the Bhagavad Gita and Srimad Bhagavatam,
+            accompanied by elaborate commentaries. His books are widely
+            respected by scholars and devotees alike and are used as standard
+            university textbooks.
+          </p>
+          <p class="text-brand-gray leading-relaxed mb-6">
+            Before his passing in 1977, he established 108 temples, wrote more
+            than 70 books, and initiated over 5,000 disciples. His legacy
+            continues to inspire millions around the world.
+          </p>
+          <button
+            class="px-8 py-3 bg-gradient-to-r from-primary to-primary-hover text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition"
+          >
+            Read More About Srila Prabhupada
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section
+    class="py-20 bg-gradient-to-br from-background-light to-background-section"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          <span class="gradient-text">Our Core Values</span>
+        </h2>
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"
+        >
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-primary text-3xl">favorite</span>
+          </div>
+          <h4 class="text-xl font-bold text-brand-brown mb-2">Devotion</h4>
+          <p class="text-brand-gray text-sm">
+            Pure love and service to Lord Krishna
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-secondary text-3xl">menu_book</span
+            >
+          </div>
+          <h4 class="text-xl font-bold text-brand-brown mb-2">Knowledge</h4>
+          <p class="text-brand-gray text-sm">
+            Understanding Vedic wisdom and philosophy
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-primary text-3xl"
+              >volunteer_activism</span
+            >
+          </div>
+          <h4 class="text-xl font-bold text-brand-brown mb-2">Service</h4>
+          <p class="text-brand-gray text-sm">Selfless service to humanity</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-secondary text-3xl">spa</span>
+          </div>
+          <h4 class="text-xl font-bold text-brand-brown mb-2">Compassion</h4>
+          <p class="text-brand-gray text-sm">
+            Love and care for all living beings
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-bold mb-6">Join Our Spiritual Journey</h2>
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        Come and experience the joy of Krishna consciousness. Everyone is
+        welcome at ISKCON Varachha.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button
+          class="px-8 py-4 bg-white text-primary rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition"
+        >
+          Visit Us Today
+        </button>
+        <button
+          class="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-primary transition"
+        >
+          Become a Member
+        </button>
+      </div>
+    </div>
+  </section>
+</Layout>

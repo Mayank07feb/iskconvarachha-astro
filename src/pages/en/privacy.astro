@@ -1,0 +1,630 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { seoData } from "../../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.privacy;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <!-- HERO -->
+  <section
+    class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-gradient-to-br from-background-light via-white to-background-section"
+  >
+    <!-- Decorative background -->
+    <div class="absolute inset-0 opacity-5">
+      <div
+        class="absolute top-10 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl"
+      >
+      </div>
+    </div>
+
+    <!-- Animated floating elements -->
+    <div
+      class="absolute top-1/3 left-8 w-10 h-10 bg-primary/10 rounded-full animate-pulse"
+    >
+    </div>
+    <div
+      class="absolute bottom-1/4 right-20 w-14 h-14 bg-secondary/10 rounded-full animate-pulse delay-700"
+    >
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <div
+        class="inline-flex items-center gap-2 mb-5 px-5 py-2 bg-primary/10 rounded-full"
+      >
+        <span class="material-icons text-primary text-sm">privacy_tip</span>
+        <span class="text-primary font-semibold text-sm"
+          >Privacy & Data Protection</span
+        >
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="block text-gray-900">Privacy Policy</span>
+        <span
+          class="text-transparent bg-gradient-to-r from-secondary to-primary bg-clip-text"
+          >ISKCON Varachha, Surat</span
+        >
+      </h1>
+
+      <p class="text-lg text-brand-gray max-w-3xl mx-auto mb-8">
+        This policy explains how we collect, use, and safeguard your personal
+        information while respecting your spiritual journey.
+      </p>
+
+      <div
+        class="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-brand-gray"
+      >
+        <span class="flex items-center gap-2">
+          <span class="material-icons text-primary text-sm">update</span>
+          Effective: <strong class="text-brand-brown ml-1">January 2025</strong>
+        </span>
+        <span class="h-4 w-px bg-brand-gray/20 hidden sm:block"></span>
+        <span class="flex items-center gap-2">
+          <span class="material-icons text-primary text-sm">verified</span>
+          GDPR & Data Protection Compliant
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section
+    class="py-16 md:py-24 bg-gradient-to-b from-white to-background-light/30"
+  >
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Key Principles -->
+      <div
+        class="mb-12 bg-white rounded-2xl p-6 shadow-lg border border-brand-brown/5"
+      >
+        <h3
+          class="text-xl font-bold text-brand-brown mb-4 flex items-center gap-2"
+        >
+          <span class="material-icons">shield</span>
+          Our Privacy Principles
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div
+            class="flex items-center gap-3 p-3 bg-background-light rounded-lg"
+          >
+            <span class="material-icons text-primary">visibility_off</span>
+            <span class="text-sm font-medium text-brand-brown"
+              >Transparency</span
+            >
+          </div>
+          <div
+            class="flex items-center gap-3 p-3 bg-background-light rounded-lg"
+          >
+            <span class="material-icons text-primary">security</span>
+            <span class="text-sm font-medium text-brand-brown">Security</span>
+          </div>
+          <div
+            class="flex items-center gap-3 p-3 bg-background-light rounded-lg"
+          >
+            <span class="material-icons text-primary">gpp_good</span>
+            <span class="text-sm font-medium text-brand-brown">Consent</span>
+          </div>
+          <div
+            class="flex items-center gap-3 p-3 bg-background-light rounded-lg"
+          >
+            <span class="material-icons text-primary">delete</span>
+            <span class="text-sm font-medium text-brand-brown">Control</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-8">
+        <!-- Section 1 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">person_search</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-3">
+                <h2 class="text-2xl font-bold text-brand-brown">
+                  1. Information We Collect
+                </h2>
+                <span
+                  class="hidden md:inline-flex items-center gap-1 px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full"
+                >
+                  <span class="material-icons text-sm">info</span>
+                  Voluntary Data
+                </span>
+              </div>
+              <p class="text-brand-gray leading-relaxed mb-4">
+                We may collect personal details such as name, email address,
+                phone number, and communication preferences when you voluntarily
+                interact with our forms, events, or services.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-4 mt-6">
+                <div class="bg-background-light rounded-xl p-4">
+                  <h4
+                    class="font-semibold text-brand-brown mb-2 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary text-sm"
+                      >contact_mail</span
+                    >
+                    Contact Information
+                  </h4>
+                  <ul class="text-sm text-brand-gray space-y-1">
+                    <li>• Name & Email Address</li>
+                    <li>• Phone Number</li>
+                    <li>• Communication Preferences</li>
+                  </ul>
+                </div>
+
+                <div class="bg-background-light rounded-xl p-4">
+                  <h4
+                    class="font-semibold text-brand-brown mb-2 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary text-sm"
+                      >event</span
+                    >
+                    Interaction Data
+                  </h4>
+                  <ul class="text-sm text-brand-gray space-y-1">
+                    <li>• Event Registrations</li>
+                    <li>• Seva Bookings</li>
+                    <li>• Newsletter Subscriptions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary">settings</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                2. How We Use Your Information
+              </h2>
+
+              <div class="space-y-4 mb-6">
+                <div
+                  class="flex items-start gap-3 p-4 bg-background-light rounded-xl"
+                >
+                  <span class="material-icons text-primary">mail</span>
+                  <div>
+                    <h4 class="font-semibold text-brand-brown mb-1">
+                      Communication
+                    </h4>
+                    <p class="text-sm text-brand-gray">
+                      Respond to inquiries and provide spiritual guidance
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start gap-3 p-4 bg-background-light rounded-xl"
+                >
+                  <span class="material-icons text-primary">notifications</span>
+                  <div>
+                    <h4 class="font-semibold text-brand-brown mb-1">
+                      Updates & Events
+                    </h4>
+                    <p class="text-sm text-brand-gray">
+                      Share temple activities, events, and spiritual programs
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start gap-3 p-4 bg-background-light rounded-xl"
+                >
+                  <span class="material-icons text-primary">analytics</span>
+                  <div>
+                    <h4 class="font-semibold text-brand-brown mb-1">
+                      Website Improvement
+                    </h4>
+                    <p class="text-sm text-brand-gray">
+                      Enhance user experience and website performance
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl p-4"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="material-icons text-primary">info</span>
+                  <p class="text-sm text-brand-gray">
+                    We never sell or rent your personal information to third
+                    parties for marketing purposes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">lock</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                3. Data Security & Protection
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-6">
+                We implement industry-standard security measures to protect your
+                personal data. Access to information is restricted and monitored
+                to prevent unauthorized use.
+              </p>
+
+              <div class="grid sm:grid-cols-3 gap-4">
+                <div class="text-center p-4 bg-background-light rounded-xl">
+                  <span class="material-icons text-primary text-3xl mb-2"
+                    >https</span
+                  >
+                  <h4 class="font-semibold text-brand-brown mb-1">
+                    SSL Encryption
+                  </h4>
+                  <p class="text-xs text-brand-gray">
+                    Secure data transmission
+                  </p>
+                </div>
+
+                <div class="text-center p-4 bg-background-light rounded-xl">
+                  <span class="material-icons text-primary text-3xl mb-2"
+                    >admin_panel_settings</span
+                  >
+                  <h4 class="font-semibold text-brand-brown mb-1">
+                    Access Control
+                  </h4>
+                  <p class="text-xs text-brand-gray">Restricted staff access</p>
+                </div>
+
+                <div class="text-center p-4 bg-background-light rounded-xl">
+                  <span class="material-icons text-primary text-3xl mb-2"
+                    >security_update_good</span
+                  >
+                  <h4 class="font-semibold text-brand-brown mb-1">
+                    Regular Audits
+                  </h4>
+                  <p class="text-xs text-brand-gray">Security assessments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary">cookie</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                4. Cookies & Tracking Technologies
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-4">
+                Cookies may be used to enhance functionality and analyze website
+                traffic. You can disable cookies through your browser settings
+                at any time.
+              </p>
+
+              <div class="flex flex-col sm:flex-row gap-4">
+                <div class="flex-1">
+                  <h4
+                    class="font-semibold text-brand-brown mb-2 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary text-sm"
+                      >check_circle</span
+                    >
+                    Essential Cookies
+                  </h4>
+                  <p class="text-sm text-brand-gray">
+                    Required for website functionality and security features
+                  </p>
+                </div>
+
+                <div class="flex-1">
+                  <h4
+                    class="font-semibold text-brand-brown mb-2 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary text-sm"
+                      >track_changes</span
+                    >
+                    Analytics Cookies
+                  </h4>
+                  <p class="text-sm text-brand-gray">
+                    Help us understand how visitors use our website
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <a
+                  href="/cookie-settings"
+                  class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors text-sm"
+                >
+                  <span class="material-icons text-sm">settings</span>
+                  Manage Cookie Preferences
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 5 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">link</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                5. Third-Party Links & Services
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-4">
+                Our website may contain links to external websites. ISKCON
+                Varachha is not responsible for the privacy practices or content
+                of third-party platforms.
+              </p>
+
+              <div class="bg-background-light rounded-xl p-4">
+                <div class="flex items-center gap-3">
+                  <span class="material-icons text-primary">warning</span>
+                  <div>
+                    <h4 class="font-semibold text-brand-brown mb-1">
+                      Important Notice
+                    </h4>
+                    <p class="text-sm text-brand-gray">
+                      We encourage you to review the privacy policies of any
+                      third-party sites you visit through links on our website.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 6 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary">update</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                6. Policy Updates & Your Rights
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-6">
+                This Privacy Policy may be revised periodically. Updates will be
+                posted on this page and take effect immediately.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <h4
+                    class="font-semibold text-brand-brown mb-3 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary"
+                      >notifications_active</span
+                    >
+                    Policy Changes
+                  </h4>
+                  <ul class="text-sm text-brand-gray space-y-2">
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >check</span
+                      >
+                      Changes posted on this page
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >check</span
+                      >
+                      Email notifications for major updates
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >check</span
+                      >
+                      Continued use implies acceptance
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4
+                    class="font-semibold text-brand-brown mb-3 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary"
+                      >manage_accounts</span
+                    >
+                    Your Rights
+                  </h4>
+                  <ul class="text-sm text-brand-gray space-y-2">
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >visibility</span
+                      >
+                      Access your personal data
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >edit</span
+                      >
+                      Request corrections
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >delete</span
+                      >
+                      Request data deletion
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 7 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">contact_support</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                7. Contact Information
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-6">
+                For privacy-related inquiries, data access requests, or to
+                exercise your rights under applicable privacy laws, please
+                contact our Data Protection Officer.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-brand-brown mb-2">
+                    Data Protection Officer
+                  </h4>
+                  <div class="space-y-2 text-sm text-brand-gray">
+                    <p class="flex items-center gap-2">
+                      <span class="material-icons text-primary text-sm"
+                        >email</span
+                      >
+                      privacy@iskconvarachha.org
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span class="material-icons text-primary text-sm"
+                        >phone</span
+                      >
+                      +91 XXX XXX XXXX
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-brand-brown mb-2">
+                    Response Time
+                  </h4>
+                  <div class="flex items-center gap-2 text-sm text-brand-gray">
+                    <span class="material-icons text-primary text-sm"
+                      >schedule</span
+                    >
+                    <span>We aim to respond within 7 working days</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consent & Acknowledgement -->
+      <div
+        class="mt-12 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/10"
+      >
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-6"
+        >
+          <div class="text-center lg:text-left">
+            <h3
+              class="text-xl font-bold text-brand-brown mb-2 flex items-center gap-2"
+            >
+              <span class="material-icons text-primary">gpp_good</span>
+              Your Privacy Matters
+            </h3>
+            <p class="text-brand-gray max-w-2xl">
+              We are committed to protecting your privacy and being transparent
+              about how we handle your personal information.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/contact"
+              class="px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 flex items-center justify-center gap-2"
+            >
+              <span class="material-icons">mail</span>
+              Contact DPO
+            </a>
+            <a
+              href="/terms"
+              class="px-6 py-3 bg-white text-primary border-2 border-primary/20 rounded-xl font-semibold hover:bg-primary/5 transition-all duration-300 flex items-center justify-center gap-2"
+            >
+              <span class="material-icons">description</span>
+              View Terms
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="mt-12 pt-8 border-t border-brand-brown/10">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-brand-gray"
+        >
+          <div class="flex items-center gap-4">
+            <span class="flex items-center gap-2">
+              <span class="material-icons text-primary">update</span>
+              Last Updated: <strong class="text-brand-brown ml-1"
+                >January 2025</strong
+              >
+            </span>
+            <span class="hidden md:block h-4 w-px bg-brand-gray/20"></span>
+            <span class="flex items-center gap-2">
+              <span class="material-icons text-primary">policy</span>
+              Document ID: <span class="text-brand-brown ml-1">PP-2025-01</span>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-xs text-brand-gray/70">
+              © 2025 ISKCON Varachha, Surat. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

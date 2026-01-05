@@ -1,0 +1,369 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { seoData } from "../../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.contact;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <!-- હીરો વિભાગ -->
+  <section
+    class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-background-light via-white to-background-section"
+  >
+    <div class="absolute inset-0 opacity-5">
+      <div
+        class="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl"
+      >
+      </div>
+    </div>
+
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
+    >
+      <div class="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
+        <p class="text-primary font-semibold text-sm">સંપર્ક કરો</p>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="gradient-text">અમારો સંપર્ક કરો</span>
+      </h1>
+      <p class="text-lg text-brand-gray max-w-3xl mx-auto">
+        અમને તમારી પાસેથી સાંભળવાનો આનંદ થશે. અમને મળો, ફોન કરો અથવા સંદેશ મોકલો.
+      </p>
+    </div>
+  </section>
+
+  <!-- સંપર્ક માહિતી કાર્ડ્સ -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <!-- સરનામું કાર્ડ -->
+        <div
+          class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 text-center hover-lift"
+        >
+          <div
+            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-white text-3xl">location_on</span>
+          </div>
+          <h3 class="text-xl font-bold text-brand-brown mb-3">અમને મળો</h3>
+          <p class="text-brand-gray mb-2">ઇસ્કોન વરાછા</p>
+          <p class="text-brand-gray text-sm">
+            ભગિની મંદિર સામે, નજીક મન્નથલ સર્કલ
+          </p>
+          <p class="text-brand-gray text-sm">સુરત, ગુજરાત - ૩૯૫૦૦૬</p>
+          <button
+            class="mt-4 px-6 py-2 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary-hover transition"
+          >
+            માર્ગદર્શન મેળવો
+          </button>
+        </div>
+
+        <!-- ફોન કાર્ડ -->
+        <div
+          class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-3xl p-8 text-center hover-lift"
+        >
+          <div
+            class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-white text-3xl">phone</span>
+          </div>
+          <h3 class="text-xl font-bold text-brand-brown mb-3">ફોન કરો</h3>
+          <p class="text-brand-gray mb-2">ફોન</p>
+          <p class="text-lg font-semibold text-secondary mb-1">
+            +૯૧ ૨૬૧ ૨૨૦૧૦૦૦
+          </p>
+          <p class="text-brand-gray text-sm mb-2">મંદિર ઓફિસ</p>
+          <p class="text-lg font-semibold text-secondary">+૯૧ ૯૮૭૬૫ ૪૩૨૧૦</p>
+          <p class="text-brand-gray text-sm">સામાન્ય પૂછપરછ</p>
+        </div>
+
+        <!-- ઇમેઇલ કાર્ડ -->
+        <div
+          class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 text-center hover-lift"
+        >
+          <div
+            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-white text-3xl">email</span>
+          </div>
+          <h3 class="text-xl font-bold text-brand-brown mb-3">ઇમેઇલ કરો</h3>
+          <p class="text-brand-gray mb-2">સામાન્ય પૂછપરછ</p>
+          <p class="text-secondary font-semibold mb-3">
+            info@iskconvarachha.com
+          </p>
+          <p class="text-brand-gray mb-2">દાન</p>
+          <p class="text-secondary font-semibold">donate@iskconvarachha.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- સંપર્ક ફોર્મ અને નકશો -->
+  <section
+    class="py-20 bg-gradient-to-br from-background-light to-background-section"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- સંપર્ક ફોર્મ -->
+        <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+          <h2 class="text-3xl font-bold text-brand-brown mb-6">
+            અમને સંદેશ મોકલો
+          </h2>
+          <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-brand-gray font-semibold mb-2"
+                  >પ્રથમ નામ</label
+                >
+                <input
+                  type="text"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  placeholder="તમારું પ્રથમ નામ દાખલ કરો"
+                />
+              </div>
+              <div>
+                <label class="block text-brand-gray font-semibold mb-2"
+                  >છેલ્લું નામ</label
+                >
+                <input
+                  type="text"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  placeholder="તમારું છેલ્લું નામ દાખલ કરો"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-brand-gray font-semibold mb-2"
+                >ઇમેઇલ સરનામું</label
+              >
+              <input
+                type="email"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                placeholder="your.email@example.com"
+              />
+            </div>
+
+            <div>
+              <label class="block text-brand-gray font-semibold mb-2"
+                >ફોન નંબર</label
+              >
+              <input
+                type="tel"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                placeholder="+૯૧ ૯૮૭૬૫ ૪૩૨૧૦"
+              />
+            </div>
+
+            <div>
+              <label class="block text-brand-gray font-semibold mb-2"
+                >વિષય</label
+              >
+              <select
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+              >
+                <option>સામાન્ય પૂછપરછ</option>
+                <option>મંદિર મુલાકાત</option>
+                <option>દાન માહિતી</option>
+                <option>ઇવેન્ટ બુકિંગ</option>
+                <option>સ્વયંસેવક તક</option>
+                <option>અન્ય</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-brand-gray font-semibold mb-2"
+                >સંદેશ</label
+              >
+              <textarea
+                rows="5"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                placeholder="તમારો સંદેશ અહીં લખો..."></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full px-8 py-4 bg-gradient-to-r from-primary to-primary-hover text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition"
+            >
+              સંદેશ મોકલો
+            </button>
+          </form>
+        </div>
+
+        <!-- નકશો અને મંદિર સમય -->
+        <div class="space-y-8">
+          <!-- નકશો -->
+          <div
+            class="bg-white rounded-3xl shadow-2xl overflow-hidden h-[400px]"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.9!2d72.8!3d21.17!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDEwJzEyLjAiTiA3MsKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+
+          <!-- મંદિર સમય -->
+          <div class="bg-white rounded-3xl shadow-2xl p-8">
+            <h3 class="text-2xl font-bold text-brand-brown mb-6">
+              મંદિર સમય
+            </h3>
+            <div class="space-y-4">
+              <div
+                class="flex justify-between items-center pb-3 border-b border-gray-200"
+              >
+                <div class="flex items-center">
+                  <span class="material-icons text-primary mr-3">wb_sunny</span>
+                  <span class="font-semibold text-brand-brown"
+                    >મંગલ આરતી</span
+                  >
+                </div>
+                <span class="text-brand-gray">૪:૩૦ AM</span>
+              </div>
+
+              <div
+                class="flex justify-between items-center pb-3 border-b border-gray-200"
+              >
+                <div class="flex items-center">
+                  <span class="material-icons text-primary mr-3"
+                    >wb_twilight</span
+                  >
+                  <span class="font-semibold text-brand-brown"
+                    >દર્શન ખુલે</span
+                  >
+                </div>
+                <span class="text-brand-gray">૭:૦૦ AM</span>
+              </div>
+
+              <div
+                class="flex justify-between items-center pb-3 border-b border-gray-200"
+              >
+                <div class="flex items-center">
+                  <span class="material-icons text-secondary mr-3"
+                    >restaurant</span
+                  >
+                  <span class="font-semibold text-brand-brown"
+                    >રાજ ભોગ આરતી</span
+                  >
+                </div>
+                <span class="text-brand-gray">૧૨:૩૦ PM</span>
+              </div>
+
+              <div
+                class="flex justify-between items-center pb-3 border-b border-gray-200"
+              >
+                <div class="flex items-center">
+                  <span class="material-icons text-secondary mr-3"
+                    >nightlight</span
+                  >
+                  <span class="font-semibold text-brand-brown"
+                    >સંધ્યા આરતી</span
+                  >
+                </div>
+                <span class="text-brand-gray">૭:૦૦ PM</span>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                  <span class="material-icons text-primary mr-3">bedtime</span>
+                  <span class="font-semibold text-brand-brown"
+                    >શયન આરતી</span
+                  >
+                </div>
+                <span class="text-brand-gray">૮:૩૦ PM</span>
+              </div>
+            </div>
+
+            <div class="mt-6 p-4 bg-background-light rounded-xl">
+              <p class="text-sm text-brand-gray text-center">
+                <span class="material-icons text-primary text-sm align-middle"
+                  >info</span
+                >
+                મંદિર દૈનિક ૪:૩૦ AM થી ૯:૦૦ PM સુધી ખુલ્લું
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ વિભાગ -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">
+          <span class="gradient-text">વારંવાર પૂછાતા પ્રશ્નો</span>
+        </h2>
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"
+        >
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="bg-background-light rounded-2xl p-6">
+          <h4 class="font-bold text-brand-brown mb-2">
+            મંદિર મુલાકાતના સમય શું છે?
+          </h4>
+          <p class="text-brand-gray">
+            મંદિર દૈનિક ૪:૩૦ AM થી ૯:૦૦ PM સુધી ખુલ્લું છે. દર્શન દિવસભર ઉપલબ્ધ છે સિવાય દેવતા વિશ્રામ સમય (૧:૩૦ PM - ૪:૦૦ PM) દરમિયાન.
+          </p>
+        </div>
+
+        <div class="bg-background-light rounded-2xl p-6">
+          <h4 class="font-bold text-brand-brown mb-2">
+            મંદિર મુલા�ાત માટે કોઈ ડ્રેસ કોડ છે?
+          </h4>
+          <p class="text-brand-gray">
+            અમે મુલાકાતીઓને સંયમિત કપડાં પહેરવાની વિનંતી કરીએ છીએ. પરંપરાગત ભારતીય પોશાક અથવા ઔપચારિક પોશાક પસંદ કરવામાં આવે છે. મહેરબાની કરીને શૉર્ટ્સ, બિન-બાંયના ટોપ અને ખુલ્લા કપડાંથી બચો.
+          </p>
+        </div>
+
+        <div class="bg-background-light rounded-2xl p-6">
+          <h4 class="font-bold text-brand-brown mb-2">
+            શું હું દૈનિક કાર્યક્રમોમાં ભાગ લઈ શકું?
+          </h4>
+          <p class="text-brand-gray">
+            હા! દરેકને અમારા દૈનિક આરતી, કીર્તન અને ભગવદ્ ગીતા વર્ગોમાં ભાગ લેવાનું સ્વાગત છે. ચોક્કસ સમય માટે અમારું શેડ્યૂલ તપાસો.
+          </p>
+        </div>
+
+        <div class="bg-background-light rounded-2xl p-6">
+          <h4 class="font-bold text-brand-brown mb-2">
+            ઇસ્કોન વરાછામાં હું સ્વયંસેવક કેવી રીતે બની શકું?
+          </h4>
+          <p class="text-brand-gray">
+            અમે વિવિધ સેવાઓમાં સ્વયંસેવકોનું સ્વાગત કરીએ છીએ. મહેરબાની કરીને ઉપરના ફોર્મ દ્વારા અમારો સંપર્ક કરો અથવા સ્વયંસેવક તકો વિશે જાણવા મંદિર ઓફિસ મુલાકાત લો.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- કોલ ટુ એક્શન -->
+  <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-bold mb-6">અમને આજે મળો</h2>
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        ઇસ્કોન વરાછામાં દિવ્ય શાંતિ અને આધ્યાત્મિક આનંદનો અનુભવ કરો. અમે તમારું સ્વાગત કરવાની રાહ જોતા છીએ!
+      </p>
+      <button
+        class="px-8 py-4 bg-white text-primary rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition"
+      >
+        તમારી મુલાકાતની યોજના બનાવો
+      </button>
+    </div>
+  </section>
+</Layout>

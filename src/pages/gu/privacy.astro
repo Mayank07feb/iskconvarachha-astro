@@ -1,0 +1,615 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { seoData } from "../../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.privacy;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <!-- હીરો -->
+  <section
+    class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-gradient-to-br from-background-light via-white to-background-section"
+  >
+    <!-- સુશોભન પૃષ્ઠભૂમિ -->
+    <div class="absolute inset-0 opacity-5">
+      <div
+        class="absolute top-10 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl"
+      >
+      </div>
+    </div>
+
+    <!-- એનિમેટેડ ફ્લોટિંગ તત્વો -->
+    <div
+      class="absolute top-1/3 left-8 w-10 h-10 bg-primary/10 rounded-full animate-pulse"
+    >
+    </div>
+    <div
+      class="absolute bottom-1/4 right-20 w-14 h-14 bg-secondary/10 rounded-full animate-pulse delay-700"
+    >
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <div
+        class="inline-flex items-center gap-2 mb-5 px-5 py-2 bg-primary/10 rounded-full"
+      >
+        <span class="material-icons text-primary text-sm">privacy_tip</span>
+        <span class="text-primary font-semibold text-sm"
+          >ગોપનીયતા અને ડેટા સુરક્ષા</span
+        >
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="block text-gray-900">ગોપનીયતા નીતિ</span>
+        <span
+          class="text-transparent bg-gradient-to-r from-secondary to-primary bg-clip-text"
+          >ઇસ્કોન વરાછા, સુરત</span
+        >
+      </h1>
+
+      <p class="text-lg text-brand-gray max-w-3xl mx-auto mb-8">
+        આ નીતિ સમજાવે છે કે તમારી આધ્યાત્મિક યાત્રાનો આદર કરતી વખતે અમે તમારી વ્યક્તિગત માહિતી કેવી રીતે એકત્રિત કરીએ છીએ, ઉપયોગ કરીએ છીએ અને સુરક્ષિત રાખીએ છીએ.
+      </p>
+
+      <div
+        class="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-brand-gray"
+      >
+        <span class="flex items-center gap-2">
+          <span class="material-icons text-primary text-sm">update</span>
+          અસરકારક: <strong class="text-brand-brown ml-1">જાન્યુઆરી ૨૦૨૫</strong>
+        </span>
+        <span class="h-4 w-px bg-brand-gray/20 hidden sm:block"></span>
+        <span class="flex items-center gap-2">
+          <span class="material-icons text-primary text-sm">verified</span>
+          GDPR અને ડેટા સુરક્ષા અનુકૂળ
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- સામગ્રી -->
+  <section
+    class="py-16 md:py-24 bg-gradient-to-b from-white to-background-light/30"
+  >
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- મુખ્ય સિદ્ધાંતો -->
+      <div
+        class="mb-12 bg-white rounded-2xl p-6 shadow-lg border border-brand-brown/5"
+      >
+        <h3
+          class="text-xl font-bold text-brand-brown mb-4 flex items-center gap-2"
+        >
+          <span class="material-icons">shield</span>
+          અમારા ગોપનીયતા સિદ્ધાંતો
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div
+            class="flex items-center gap-3 p-3 bg-background-light rounded-lg"
+          >
+            <span class="material-icons text-primary">visibility_off</span>
+            <span class="text-sm font-medium text-brand-brown"
+              >પારદર્શિતા</span
+            >
+          </div>
+          <div
+            class="flex items-center gap-3 p-3 bg-background-light rounded-lg"
+          >
+            <span class="material-icons text-primary">security</span>
+            <span class="text-sm font-medium text-brand-brown">સુરક્ષા</span>
+          </div>
+          <div
+            class="flex items-center gap-3 p-3 bg-background-light rounded-lg"
+          >
+            <span class="material-icons text-primary">gpp_good</span>
+            <span class="text-sm font-medium text-brand-brown">સંમતિ</span>
+          </div>
+          <div
+            class="flex items-center gap-3 p-3 bg-background-light rounded-lg"
+          >
+            <span class="material-icons text-primary">delete</span>
+            <span class="text-sm font-medium text-brand-brown">નિયંત્રણ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-8">
+        <!-- વિભાગ 1 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">person_search</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-3">
+                <h2 class="text-2xl font-bold text-brand-brown">
+                  ૧. અમે એકત્રિત કરીએ છીએ તે માહિતી
+                </h2>
+                <span
+                  class="hidden md:inline-flex items-center gap-1 px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full"
+                >
+                  <span class="material-icons text-sm">info</span>
+                  સ્વૈચ્છિક ડેટા
+                </span>
+              </div>
+              <p class="text-brand-gray leading-relaxed mb-4">
+                જ્યારે તમે અમારા ફોર્મ્સ, ઇવેન્ટ્સ અથવા સેવાઓ સાથે સ્વૈચ્છિક રીતે ક્રિયાપ્રતિક્રિયા કરો છો ત્યારે અમે નામ, ઇમેઇલ સરનામું, ફોન નંબર અને સંચાર પસંદગીઓ જેવી વ્યક્તિગત વિગતો એકત્રિત કરી શકીએ છીએ.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-4 mt-6">
+                <div class="bg-background-light rounded-xl p-4">
+                  <h4
+                    class="font-semibold text-brand-brown mb-2 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary text-sm"
+                      >contact_mail</span
+                    >
+                    સંપર્ક માહિતી
+                  </h4>
+                  <ul class="text-sm text-brand-gray space-y-1">
+                    <li>• નામ અને ઇમેઇલ સરનામું</li>
+                    <li>• ફોન નંબર</li>
+                    <li>• સંચાર પસંદગીઓ</li>
+                  </ul>
+                </div>
+
+                <div class="bg-background-light rounded-xl p-4">
+                  <h4
+                    class="font-semibold text-brand-brown mb-2 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary text-sm"
+                      >event</span
+                    >
+                    ક્રિયાપ્રતિક્રિયા ડેટા
+                  </h4>
+                  <ul class="text-sm text-brand-gray space-y-1">
+                    <li>• ઇવેન્ટ નોંધણીઓ</li>
+                    <li>• સેવા બુકિંગ્સ</li>
+                    <li>• ન્યુઝલેટર સબ્સ્ક્રિપ્શન્સ</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- વિભાગ 2 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary">settings</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૨. અમે તમારી માહિતીનો ઉપયોગ કેવી રીતે કરીએ છીએ
+              </h2>
+
+              <div class="space-y-4 mb-6">
+                <div
+                  class="flex items-start gap-3 p-4 bg-background-light rounded-xl"
+                >
+                  <span class="material-icons text-primary">mail</span>
+                  <div>
+                    <h4 class="font-semibold text-brand-brown mb-1">
+                      સંચાર
+                    </h4>
+                    <p class="text-sm text-brand-gray">
+                      પૂછપરછનો જવાબ આપવો અને આધ્યાત્મિક માર્ગદર્શન પૂરું પાડવું
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start gap-3 p-4 bg-background-light rounded-xl"
+                >
+                  <span class="material-icons text-primary">notifications</span>
+                  <div>
+                    <h4 class="font-semibold text-brand-brown mb-1">
+                      અપડેટ્સ અને ઇવેન્ટ્સ
+                    </h4>
+                    <p class="text-sm text-brand-gray">
+                      મંદિર પ્રવૃત્તિઓ, ઇવેન્ટ્સ અને આધ્યાત્મિક કાર્યક્રમો શેર કરવા
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start gap-3 p-4 bg-background-light rounded-xl"
+                >
+                  <span class="material-icons text-primary">analytics</span>
+                  <div>
+                    <h4 class="font-semibold text-brand-brown mb-1">
+                      વેબસાઇટ સુધારો
+                    </h4>
+                    <p class="text-sm text-brand-gray">
+                      વપરાશકર્તા અનુભવ અને વેબસાઇટ પ્રદર્શન વધારવું
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl p-4"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="material-icons text-primary">info</span>
+                  <p class="text-sm text-brand-gray">
+                    અમે તમારી વ્યક્તિગત માહિતી માર્કેટિંગ હેતુઓ માટે તૃતીય પક્ષોને કદી વેચતા અથવા ભાડે આપતા નથી.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- વિભાગ 3 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">lock</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૩. ડેટા સુરક્ષા અને સંરક્ષણ
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-6">
+                અમે તમારા વ્યક્તિગત ડેટાને રક્ષણ આપવા માટે ઉદ્યોગ-માનક સુરક્ષા પગલાં અમલમાં મૂકીએ છીએ. માહિતીની પહોંચ અનધિકૃત ઉપયોગને રોકવા માટે પ્રતિબંધિત અને મોનીટર કરવામાં આવે છે.
+              </p>
+
+              <div class="grid sm:grid-cols-3 gap-4">
+                <div class="text-center p-4 bg-background-light rounded-xl">
+                  <span class="material-icons text-primary text-3xl mb-2"
+                    >https</span
+                  >
+                  <h4 class="font-semibold text-brand-brown mb-1">
+                    SSL એન્ક્રિપ્શન
+                  </h4>
+                  <p class="text-xs text-brand-gray">
+                    સુરક્ષિત ડેટા પ્રસારણ
+                  </p>
+                </div>
+
+                <div class="text-center p-4 bg-background-light rounded-xl">
+                  <span class="material-icons text-primary text-3xl mb-2"
+                    >admin_panel_settings</span
+                  >
+                  <h4 class="font-semibold text-brand-brown mb-1">
+                    પહોંચ નિયંત્રણ
+                  </h4>
+                  <p class="text-xs text-brand-gray">પ્રતિબંધિત સ્ટાફ પહોંચ</p>
+                </div>
+
+                <div class="text-center p-4 bg-background-light rounded-xl">
+                  <span class="material-icons text-primary text-3xl mb-2"
+                    >security_update_good</span
+                  >
+                  <h4 class="font-semibold text-brand-brown mb-1">
+                    નિયમિત ઓડિટ્સ
+                  </h4>
+                  <p class="text-xs text-brand-gray">સુરક્ષા મૂલ્યાંકનો</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- વિભાગ 4 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary">cookie</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૪. કૂકીઝ અને ટ્રેકિંગ ટેકનોલોજી
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-4">
+                કાર્યક્ષમતા વધારવા અને વેબસાઇટ ટ્રાફિકનું વિશ્લેષણ કરવા માટે કૂકીઝનો ઉપયોગ કરી શકાય છે. તમે કોઈપણ સમયે તમારી બ્રાઉઝર સેટિંગ્સ દ્વારા કૂકીઝને અક્ષમ કરી શકો છો.
+              </p>
+
+              <div class="flex flex-col sm:flex-row gap-4">
+                <div class="flex-1">
+                  <h4
+                    class="font-semibold text-brand-brown mb-2 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary text-sm"
+                      >check_circle</span
+                    >
+                    આવશ્યક કૂકીઝ
+                  </h4>
+                  <p class="text-sm text-brand-gray">
+                    વેબસાઇટ કાર્યક્ષમતા અને સુરક્ષા સુવિધાઓ માટે જરૂરી
+                  </p>
+                </div>
+
+                <div class="flex-1">
+                  <h4
+                    class="font-semibold text-brand-brown mb-2 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary text-sm"
+                      >track_changes</span
+                    >
+                    એનાલિટિક્સ કૂકીઝ
+                  </h4>
+                  <p class="text-sm text-brand-gray">
+                    મુલાકાતીઓ અમારી વેબસાઇટનો ઉપયોગ કેવી રીતે કરે છે તે સમજવામાં મદદ કરે છે
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <a
+                  href="/cookie-settings"
+                  class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors text-sm"
+                >
+                  <span class="material-icons text-sm">settings</span>
+                  કૂકી પસંદગીઓ મેનેજ કરો
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- વિભાગ 5 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">link</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૫. તૃતીય-પક્ષ લિંક્સ અને સેવાઓ
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-4">
+                અમારી વેબસાઇટમાં બાહ્ય વેબસાઇટ્સની લિંક્સ હોઈ શકે છે. તૃતીય-પક્ષ પ્લેટફોર્મ્સની ગોપનીયતા પદ્ધતિઓ અથવા સામગ્રી માટે ઇસ્કોન વરાછા જવાબદાર નથી.
+              </p>
+
+              <div class="bg-background-light rounded-xl p-4">
+                <div class="flex items-center gap-3">
+                  <span class="material-icons text-primary">warning</span>
+                  <div>
+                    <h4 class="font-semibold text-brand-brown mb-1">
+                      મહત્વપૂર્ણ સૂચના
+                    </h4>
+                    <p class="text-sm text-brand-gray">
+                      અમારી વેબસાઇટ પરની લિંક્સ દ્વારા તમે મુલાકાત લેતા કોઈપણ તૃતીય-પક્ષ સાઇટ્સની ગોપનીયતા નીતિઓની સમીક્ષા કરવાનું અમે પ્રોત્સાહન આપીએ છીએ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- વિભાગ 6 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary">update</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૬. નીતિ અપડેટ્સ અને તમારા અધિકારો
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-6">
+                આ ગોપનીયતા નીતિ સામયિક રીતે સુધારી શકાય છે. અપડેટ્સ આ પૃષ્ઠ પર પોસ્ટ કરવામાં આવશે અને તરત જ અસરકારક થશે.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <h4
+                    class="font-semibold text-brand-brown mb-3 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary"
+                      >notifications_active</span
+                    >
+                    નીતિ ફેરફારો
+                  </h4>
+                  <ul class="text-sm text-brand-gray space-y-2">
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >check</span
+                      >
+                      ફેરફારો આ પૃષ્ઠ પર પોસ્ટ
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >check</span
+                      >
+                      મુખ્ય અપડેટ્સ માટે ઇમેઇલ સૂચનાઓ
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >check</span
+                      >
+                      સતત ઉપયોગ સ્વીકૃતિ દર્શાવે છે
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4
+                    class="font-semibold text-brand-brown mb-3 flex items-center gap-2"
+                  >
+                    <span class="material-icons text-primary"
+                      >manage_accounts</span
+                    >
+                    તમારા અધિકારો
+                  </h4>
+                  <ul class="text-sm text-brand-gray space-y-2">
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >visibility</span
+                      >
+                      તમારા વ્યક્તિગત ડેટા ઍક્સેસ કરો
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >edit</span
+                      >
+                      સુધારાઓની વિનંતી કરો
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-primary text-sm mt-0.5"
+                        >delete</span
+                      >
+                      ડેટા કાઢી નાખવાની વિનંતી કરો
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- વિભાગ 7 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">contact_support</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૭. સંપર્ક માહિતી
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-6">
+                ગોપનીયતા-સંબંધિત પૂછપરછ, ડેટા ઍક્સેસ વિનંતીઓ અથવા લાગુ ગોપનીયતા કાયદાઓ હેઠળ તમારા અધિકારોનો ઉપયોગ કરવા માટે, કૃપા કરીને અમારા ડેટા સુરક્ષા અધિકારીનો સંપર્ક કરો.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-brand-brown mb-2">
+                    ડેટા સુરક્ષા અધિકારી
+                  </h4>
+                  <div class="space-y-2 text-sm text-brand-gray">
+                    <p class="flex items-center gap-2">
+                      <span class="material-icons text-primary text-sm"
+                        >email</span
+                      >
+                      privacy@iskconvarachha.org
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span class="material-icons text-primary text-sm"
+                        >phone</span
+                      >
+                      +૯૧ XXX XXX XXXX
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-brand-brown mb-2">
+                    પ્રતિભાવ સમય
+                  </h4>
+                  <div class="flex items-center gap-2 text-sm text-brand-gray">
+                    <span class="material-icons text-primary text-sm"
+                      >schedule</span
+                    >
+                    <span>અમે ૭ કામકાજના દિવસોમાં પ્રતિભાવ આપવાનો ઉદ્દેશ્ય રાખીએ છીએ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- સંમતિ અને સ્વીકૃતિ -->
+      <div
+        class="mt-12 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/10"
+      >
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-6"
+        >
+          <div class="text-center lg:text-left">
+            <h3
+              class="text-xl font-bold text-brand-brown mb-2 flex items-center gap-2"
+            >
+              <span class="material-icons text-primary">gpp_good</span>
+              તમારી ગોપનીયતા મહત્વપૂર્ણ છે
+            </h3>
+            <p class="text-brand-gray max-w-2xl">
+              તમારી ગોપનીયતાને સુરક્ષિત રાખવા અને તમારી વ્યક્તિગત માહિતીનું સંચાલન કેવી રીતે કરીએ છીએ તેના વિશે પારદર્શક રહેવા અમે પ્રતિબદ્ધ છીએ.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/contact"
+              class="px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 flex items-center justify-center gap-2"
+            >
+              <span class="material-icons">mail</span>
+              DPOનો સંપર્ક કરો
+            </a>
+            <a
+              href="/terms"
+              class="px-6 py-3 bg-white text-primary border-2 border-primary/20 rounded-xl font-semibold hover:bg-primary/5 transition-all duration-300 flex items-center justify-center gap-2"
+            >
+              <span class="material-icons">description</span>
+              શરતો જુઓ
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ફૂટર -->
+      <div class="mt-12 pt-8 border-t border-brand-brown/10">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-brand-gray"
+        >
+          <div class="flex items-center gap-4">
+            <span class="flex items-center gap-2">
+              <span class="material-icons text-primary">update</span>
+              છેલ્લું અપડેટ: <strong class="text-brand-brown ml-1"
+                >જાન્યુઆરી ૨૦૨૫</strong
+              >
+            </span>
+            <span class="hidden md:block h-4 w-px bg-brand-gray/20"></span>
+            <span class="flex items-center gap-2">
+              <span class="material-icons text-primary">policy</span>
+              દસ્તાવેજ ID: <span class="text-brand-brown ml-1">PP-2025-01</span>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-xs text-brand-gray/70">
+              © ૨૦૨૫ ઇસ્કોન વરાછા, સુરત. બધા હક્કો અનામત.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

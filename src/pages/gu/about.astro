@@ -1,0 +1,344 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { seoData } from "../../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.about;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <!-- હીરો વિભાગ -->
+  <section
+    class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-background-light via-white to-background-section"
+  >
+    <div class="absolute inset-0 opacity-5">
+      <div
+        class="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl"
+      >
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-12">
+        <div class="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
+          <p class="text-primary font-semibold text-sm">ઇસ્કોન વરાછા વિશે</p>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          <span class="gradient-text">શ્રી શ્રી રાધા ગોપાલ જી મંદિર</span>
+        </h1>
+        <p class="text-lg text-brand-gray max-w-3xl mx-auto">
+          સુરત, ગુજરાતના હૃદયમાં આધ્યાત્મિક જ્ઞાન અને ભક્તિનો પ્રકાશસ્તંભ
+        </p>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden shadow-2xl">
+        <img
+          src="https://images.unsplash.com/photo-1582659553576-f4b64b6ec391?w=1200"
+          alt="ઇસ્કોન મંદિર"
+          class="w-full h-[500px] object-cover"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- અમારી વાર્તા -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-bold text-brand-brown mb-6">અમારી વાર્તા</h2>
+          <p class="text-brand-gray leading-relaxed mb-4">
+            ઇસ્કોન વરાછા, સુરત, ભગવદ્ ગીતાના કાલજયી ઉપદેશો અને કૃષ્ણ ભાવનાના
+            પદ્ધતિને ફેલાવવા માટે સમર્પિત એક આધ્યાત્મિક અભયારણ્ય છે. હિસ ડિવાઇન
+            ગ્રેસ એ.સી. ભક્તિવેદાંત સ્વામી પ્રભુપાદ દ્વારા શિખવવામાં આવેલા
+            સિદ્ધાંતો પર સ્થાપિત, અમારું મંદિર આધ્યાત્મિક વિકાસ, સાંસ્કૃતિક
+            સંરક્ષણ અને સમુદાય સેવા માટે કેન્દ્ર તરીકે સેવા આપે છે.
+          </p>
+          <p class="text-brand-gray leading-relaxed mb-4">
+            અમારી સ્થાપના થી, અમે એક શાંત આશ્રયસ્થાન પૂરું પાડવા માટે સમર્પિત
+            છીએ જ્યાં ભક્તો અને આધ્યાત્મિક શોધકો કીર્તન, પ્રાર્થના, અભ્યાસ અને
+            સેવા દ્વારા પરમેશ્વર શ્રી કૃષ્ણ સાથેના તેમના સંબંધને ઊંડો કરી શકે.
+          </p>
+          <p class="text-brand-gray leading-relaxed">
+            અમારું મંદિર માત્ર પૂજાનું સ્થાન જ નથી, પણ સમુદાય કેન્દ્ર તરીકે પણ
+            સેવા આપે છે જે શાકાહાર, યોગ, ધ્યાન અને પ્રાચીન વૈદિક શાસ્ત્રોના
+            અભ્યાસને પ્રોત્સાહન આપે છે.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div
+            class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-6 text-center"
+          >
+            <div class="text-4xl font-bold text-primary mb-2">૧૦૦૦+</div>
+            <p class="text-brand-gray">સક્રિય ભક્તો</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-6 text-center"
+          >
+            <div class="text-4xl font-bold text-secondary mb-2">૫૦+</div>
+            <p class="text-brand-gray">દૈનિક કાર્યક્રમો</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-6 text-center"
+          >
+            <div class="text-4xl font-bold text-secondary mb-2">૩૬૫</div>
+            <p class="text-brand-gray">સેવાના દિવસો</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-6 text-center"
+          >
+            <div class="text-4xl font-bold text-primary mb-2">૨૪/૭</div>
+            <p class="text-brand-gray">મંદિર ખુલ્લું</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- અમારું ધ્યેય અને દ્રષ્ટિ -->
+  <section
+    class="py-20 bg-gradient-to-br from-background-light to-background-section"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- ધ્યેય -->
+        <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-primary to-brand-saffron rounded-2xl flex items-center justify-center mb-6"
+          >
+            <span class="material-icons text-white text-3xl">flag</span>
+          </div>
+          <h3 class="text-3xl font-bold text-brand-brown mb-4">અમારું ધ્યેય</h3>
+          <ul class="space-y-3 text-brand-gray">
+            <li class="flex items-start">
+              <span class="material-icons text-primary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>ભગવાન કૃષ્ણ અને ભગવદ્ ગીતાના ઉપદેશો ફેલાવવા</span>
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-primary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>બધા શોધકોને આધ્યાત્મિક માર્ગદર્શન અને સહાય પૂરી પાડવી</span>
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-primary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>શાકાહાર અને કરુણામય જીવનને પ્રોત્સાહન આપવું</span>
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-primary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>પ્રસાદ વિતરણ દ્વારા સમુદાયની સેવા કરવી</span>
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-primary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>વૈદિક સંસ્કૃતિ અને મૂલ્યોનું સંરક્ષણ અને પ્રસાર કરવો</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- દ્રષ્ટિ -->
+        <div class="bg-white rounded-3xl p-8 shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-secondary to-brand-maroon rounded-2xl flex items-center justify-center mb-6"
+          >
+            <span class="material-icons text-white text-3xl">visibility</span>
+          </div>
+          <h3 class="text-3xl font-bold text-brand-brown mb-4">
+            અમારી દ્રષ્ટિ
+          </h3>
+          <ul class="space-y-3 text-brand-gray">
+            <li class="flex items-start">
+              <span class="material-icons text-secondary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span
+                >સુરતમાં વિશ્વ-સ્તરનું વૈદિક સાંસ્કૃતિક કેન્દ્ર સ્થાપવું</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-secondary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>હજારો ભક્તો માટે આધ્યાત્મિક અભયારણ્ય બનાવવું</span>
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-secondary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>વૈદિક શિક્ષણ અને મૂલ્યો દ્વારા યુવાઓને પ્રેરિત કરવા</span>
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-secondary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>પ્રેમ, શાંતિ અને સુમેળ પર આધારિત સમુદાય બનાવવો</span>
+            </li>
+            <li class="flex items-start">
+              <span class="material-icons text-secondary mr-2 mt-1"
+                >check_circle</span
+              >
+              <span>કૃષ્ણ ભાવના સર્વેને સુલભ બનાવવી</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- સ્થાપક આચાર્ય -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          <span class="gradient-text">સ્થાપક આચાર્ય</span>
+        </h2>
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"
+        >
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="rounded-3xl overflow-hidden shadow-2xl">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600"
+            alt="શ્રીલા પ્રભુપાદ"
+            class="w-full h-[500px] object-cover"
+          />
+        </div>
+
+        <div>
+          <h3 class="text-3xl font-bold text-brand-brown mb-4">
+            હિસ ડિવાઇન ગ્રેસ એ.સી. ભક્તિવેદાંત સ્વામી પ્રભુપાદ
+          </h3>
+          <p class="text-brand-gray leading-relaxed mb-4">
+            હિસ ડિવાઇન ગ્રેસ એ.સી. ભક્તિવેદાંત સ્વામી પ્રભુપાદ (૧૮૯૬-૧૯૭૭)
+            આંતરરાષ્ટ્રીય કૃષ્ણ ભાવનામૃત સંઘ (ઇસ્કોન)ના સ્થાપક-આચાર્ય છે. ૬૯
+            વર્ષની ઉંમરે, તેઓ પૂરા વિશ્વમાં કૃષ્ણ ભાવના ફેલાવવાના મિશન સાથે
+            ભારતથી અમેરિકા ગયા.
+          </p>
+          <p class="text-brand-gray leading-relaxed mb-4">
+            શ્રીલા પ્રભુપાદએ વૈદિક શાસ્ત્રોના ૮૦થી વધુ ગ્રંથોનો અંગ્રેજીમાં
+            અનુવાદ કર્યો, જેમાં ભગવદ્ ગીતા અને શ્રીમદ્ ભાગવતમનો સમાવેશ થાય છે,
+            જેમાં વિસ્તૃત ટીકાઓ સાથે છે. તેમની પુસ્તકો વિદ્વાનો અને ભક્તો દ્વારા
+            સમાન રીતે આદર સાથે જોવામાં આવે છે અને માનક યુનિવર્સિટી પાઠ્યપુસ્તકો
+            તરીકે ઉપયોગમાં લેવાય છે.
+          </p>
+          <p class="text-brand-gray leading-relaxed mb-6">
+            ૧૯૭૭માં તેમના નિધન પહેલાં, તેમણે ૧૦૮ મંદિરોની સ્થાપના કરી, ૭૦થી વધુ
+            પુસ્તકો લખ્યા અને ૫,૦૦૦થી વધુ શિષ્યોની દીક્ષા આપી. તેમની વિરાસત આજે
+            પણ વિશ્વભરના લાખો લોકોને પ્રેરણા આપી રહી છે.
+          </p>
+          <button
+            class="px-8 py-3 bg-gradient-to-r from-primary to-primary-hover text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition"
+          >
+            શ્રીલા પ્રભુપાદ વિશે વધુ વાંચો
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- મુખ્ય મૂલ્યો -->
+  <section
+    class="py-20 bg-gradient-to-br from-background-light to-background-section"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          <span class="gradient-text">અમારા મુખ્ય મૂલ્યો</span>
+        </h2>
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"
+        >
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-primary text-3xl">favorite</span>
+          </div>
+          <h4 class="text-xl font-bold text-brand-brown mb-2">ભક્તિ</h4>
+          <p class="text-brand-gray text-sm">
+            ભગવાન કૃષ્ણ પ્રતિ શુદ્ધ પ્રેમ અને સેવા
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-secondary text-3xl">menu_book</span
+            >
+          </div>
+          <h4 class="text-xl font-bold text-brand-brown mb-2">જ્ઞાન</h4>
+          <p class="text-brand-gray text-sm">વૈદિક જ્ઞાન અને દર્શનની સમજ</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-primary text-3xl"
+              >volunteer_activism</span
+            >
+          </div>
+          <h4 class="text-xl font-bold text-brand-brown mb-2">સેવા</h4>
+          <p class="text-brand-gray text-sm">માનવજાતિની નિઃસ્વાર્થ સેવા</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover-lift">
+          <div
+            class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-secondary text-3xl">spa</span>
+          </div>
+          <h4 class="text-xl font-bold text-brand-brown mb-2">કરુણા</h4>
+          <p class="text-brand-gray text-sm">
+            બધા જીવિત પ્રાણીઓ પ્રતિ પ્રેમ અને કાળજી
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- કોલ ટુ એક્શન -->
+  <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-bold mb-6">અમારી આધ્યાત્મિક યાત્રામાં જોડાઓ</h2>
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        આવો અને કૃષ્ણ ભાવનાના આનંદનો અનુભવ કરો. ઇસ્કોન વરાછામાં બધાનું સ્વાગત
+        છે.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button
+          class="px-8 py-4 bg-white text-primary rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition"
+        >
+          અમને આજે મળો
+        </button>
+        <button
+          class="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-primary transition"
+        >
+          સભ્ય બનો
+        </button>
+      </div>
+    </div>
+  </section>
+</Layout>

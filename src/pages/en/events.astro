@@ -1,0 +1,727 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { seoData } from "../../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.events;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <section
+    class="pt-16 pb-12 md:pt-24 md:pb-16 lg:pt-28 lg:pb-20 bg-gradient-to-br from-background-light via-white to-background-section relative overflow-hidden"
+  >
+    <!-- Decorative elements -->
+    <div
+      class="absolute top-4 left-4 w-16 h-16 md:top-10 md:left-10 md:w-24 md:h-24 bg-primary/5 rounded-full blur-xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-4 right-4 w-20 h-20 md:bottom-10 md:right-10 md:w-32 md:h-32 bg-brand-saffron/5 rounded-full blur-xl"
+    >
+    </div>
+
+    <div
+      class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10"
+    >
+      <div
+        class="inline-flex items-center gap-2 mb-3 md:mb-4 px-3 py-1.5 md:px-4 md:py-2 bg-secondary/10 rounded-full"
+      >
+        <span class="material-icons text-secondary text-sm md:text-base"
+          >calendar_month</span
+        >
+        <span class="text-secondary text-xs md:text-sm font-medium"
+          >Upcoming Events</span
+        >
+      </div>
+
+      <h1
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6"
+      >
+        <span class="block text-gray-900">Spiritual Events &</span>
+        <span
+          class="text-transparent bg-gradient-to-r from-secondary to-primary bg-clip-text"
+          >Festivals 2024</span
+        >
+      </h1>
+
+      <p
+        class="text-base sm:text-lg md:text-xl text-brand-gray max-w-3xl mx-auto mb-6 md:mb-8 leading-relaxed"
+      >
+        Join us for special spiritual events, festivals, and celebrations
+        throughout the year. Experience the divine atmosphere and blessings of
+        Sri Sri Radha Gopal Ji.
+      </p>
+
+      <div class="flex flex-wrap gap-2 md:gap-3 justify-center">
+        <div class="px-3 py-1.5 md:px-4 md:py-2 bg-primary/10 rounded-full">
+          <span class="text-primary text-xs md:text-sm font-semibold"
+            >📅 Monthly Programs</span
+          >
+        </div>
+        <div class="px-3 py-1.5 md:px-4 md:py-2 bg-secondary/10 rounded-full">
+          <span class="text-secondary text-xs md:text-sm font-semibold"
+            >🎉 Major Festivals</span
+          >
+        </div>
+        <div class="px-3 py-1.5 md:px-4 md:py-2 bg-brand-brown/10 rounded-full">
+          <span class="text-brand-brown text-xs md:text-sm font-semibold"
+            >🙏 Special Pujas</span
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Major Events -->
+  <section class="py-12 md:py-16 lg:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8 md:mb-12 lg:mb-16">
+        <h2
+          class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 md:mb-4"
+        >
+          Upcoming Major Events
+        </h2>
+        <p
+          class="text-brand-gray text-sm sm:text-base md:text-lg max-w-2xl mx-auto"
+        >
+          Mark your calendar for these significant spiritual celebrations
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:gap-8 lg:grid-cols-2">
+        <!-- Major Event 1 -->
+        <div
+          class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl md:rounded-2xl overflow-hidden border border-primary/10 hover:shadow-xl md:hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 md:hover:-translate-y-2"
+        >
+          <div class="p-4 sm:p-6 md:p-8">
+            <div class="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <div class="flex-shrink-0 w-full sm:w-auto">
+                <div
+                  class="w-full sm:w-20 md:w-24 h-20 md:h-24 bg-white rounded-lg md:rounded-xl shadow-sm md:shadow-md flex flex-col items-center justify-center border border-secondary/20 mx-auto sm:mx-0"
+                >
+                  <div class="text-2xl md:text-3xl font-bold text-secondary">
+                    18
+                  </div>
+                  <div
+                    class="text-xs md:text-sm font-semibold text-brand-brown"
+                  >
+                    March
+                  </div>
+                  <div class="text-xs text-brand-gray">2024</div>
+                </div>
+              </div>
+              <div class="flex-grow">
+                <div class="flex items-center gap-2 md:gap-3 mb-2">
+                  <span class="material-icons text-primary text-sm md:text-base"
+                    >festival</span
+                  >
+                  <span
+                    class="text-xs md:text-sm font-semibold text-primary bg-primary/10 px-2 md:px-3 py-1 rounded-full"
+                    >Major Festival</span
+                  >
+                </div>
+                <h3
+                  class="text-lg sm:text-xl md:text-2xl font-bold text-brand-brown mb-2 md:mb-3"
+                >
+                  Sri Gaura Purnima
+                </h3>
+                <p class="text-brand-gray text-sm md:text-base mb-3 md:mb-4">
+                  Appearance day celebration of Sri Chaitanya Mahaprabhu.
+                  Special abhishek, kirtan, and feast throughout the day.
+                </p>
+                <div class="flex flex-col sm:flex-row flex-wrap gap-2 md:gap-4">
+                  <div class="flex items-center gap-1 md:gap-2">
+                    <span
+                      class="material-icons text-xs md:text-sm text-secondary"
+                      >schedule</span
+                    >
+                    <span class="text-xs md:text-sm text-brand-gray"
+                      >6:00 AM - 9:00 PM</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-1 md:gap-2">
+                    <span
+                      class="material-icons text-xs md:text-sm text-secondary"
+                      >location_on</span
+                    >
+                    <span class="text-xs md:text-sm text-brand-gray"
+                      >Main Temple Hall</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 md:mt-6 pt-4 md:pt-6 border-t border-primary/10">
+              <a
+                href="#"
+                class="inline-flex items-center justify-center gap-1 md:gap-2 px-4 py-2 md:px-6 md:py-3 bg-primary text-white rounded-lg md:rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 hover:shadow-lg text-sm md:text-base w-full sm:w-auto"
+              >
+                <span class="material-icons text-sm md:text-base"
+                  >event_available</span
+                >
+                Register for Feast
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Major Event 2 -->
+        <div
+          class="bg-gradient-to-br from-secondary/5 to-primary/5 rounded-xl md:rounded-2xl overflow-hidden border border-secondary/10 hover:shadow-xl md:hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 md:hover:-translate-y-2"
+        >
+          <div class="p-4 sm:p-6 md:p-8">
+            <div class="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <div class="flex-shrink-0 w-full sm:w-auto">
+                <div
+                  class="w-full sm:w-20 md:w-24 h-20 md:h-24 bg-white rounded-lg md:rounded-xl shadow-sm md:shadow-md flex flex-col items-center justify-center border border-primary/20 mx-auto sm:mx-0"
+                >
+                  <div class="text-2xl md:text-3xl font-bold text-primary">
+                    12
+                  </div>
+                  <div
+                    class="text-xs md:text-sm font-semibold text-brand-brown"
+                  >
+                    April
+                  </div>
+                  <div class="text-xs text-brand-gray">2024</div>
+                </div>
+              </div>
+              <div class="flex-grow">
+                <div class="flex items-center gap-2 md:gap-3 mb-2">
+                  <span
+                    class="material-icons text-secondary text-sm md:text-base"
+                    >celebration</span
+                  >
+                  <span
+                    class="text-xs md:text-sm font-semibold text-secondary bg-secondary/10 px-2 md:px-3 py-1 rounded-full"
+                    >Ram Navami</span
+                  >
+                </div>
+                <h3
+                  class="text-lg sm:text-xl md:text-2xl font-bold text-brand-brown mb-2 md:mb-3"
+                >
+                  Sri Rama Navami
+                </h3>
+                <p class="text-brand-gray text-sm md:text-base mb-3 md:mb-4">
+                  Appearance day of Lord Sri Rama. Special decorations, Rama
+                  Katha, and grand abhishek ceremony.
+                </p>
+                <div class="flex flex-col sm:flex-row flex-wrap gap-2 md:gap-4">
+                  <div class="flex items-center gap-1 md:gap-2">
+                    <span class="material-icons text-xs md:text-sm text-primary"
+                      >schedule</span
+                    >
+                    <span class="text-xs md:text-sm text-brand-gray"
+                      >5:00 AM - 10:00 PM</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-1 md:gap-2">
+                    <span class="material-icons text-xs md:text-sm text-primary"
+                      >location_on</span
+                    >
+                    <span class="text-xs md:text-sm text-brand-gray"
+                      >Temple Complex</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 md:mt-6 pt-4 md:pt-6 border-t border-secondary/10">
+              <a
+                href="#"
+                class="inline-flex items-center justify-center gap-1 md:gap-2 px-4 py-2 md:px-6 md:py-3 bg-secondary text-white rounded-lg md:rounded-xl font-semibold hover:bg-secondary-hover transition-all duration-300 hover:shadow-lg text-sm md:text-base w-full sm:w-auto"
+              >
+                <span class="material-icons text-sm md:text-base"
+                  >volunteer_activism</span
+                >
+                Volunteer for Seva
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monthly Events Grid -->
+  <section
+    class="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-white to-background-light/30"
+  >
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8 md:mb-12 lg:mb-16">
+        <h2
+          class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 md:mb-4"
+        >
+          Monthly Events
+        </h2>
+        <p
+          class="text-brand-gray text-sm sm:text-base md:text-lg max-w-2xl mx-auto"
+        >
+          Regular special programs held every month
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
+      >
+        <!-- Monthly Event 1 -->
+        <div
+          class="group bg-white p-4 sm:p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl md:hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-primary/20 hover:-translate-y-1 md:hover:-translate-y-2"
+        >
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg md:rounded-2xl mb-4 md:mb-6 mx-auto group-hover:scale-105 md:group-hover:scale-110 transition-transform duration-300"
+          >
+            <span
+              class="material-icons text-primary text-2xl sm:text-3xl md:text-4xl"
+              >nightlight</span
+            >
+          </div>
+
+          <div class="text-center">
+            <div class="flex justify-center mb-3 md:mb-4">
+              <span
+                class="px-2 md:px-3 py-1 bg-primary/10 text-primary text-xs md:text-sm font-semibold rounded-full"
+                >Ekadashi</span
+              >
+            </div>
+            <h4
+              class="text-lg sm:text-xl md:text-2xl font-bold text-brand-brown mb-2 md:mb-3"
+            >
+              Ekadashi Observance
+            </h4>
+            <p
+              class="text-brand-gray text-sm md:text-base mb-4 md:mb-6 leading-relaxed"
+            >
+              Twice-monthly fasting day with special kirtan, Bhagavatam class,
+              and Ekadashi mahaprasadam distribution.
+            </p>
+
+            <div class="space-y-3 md:space-y-4">
+              <div
+                class="flex items-center gap-2 md:gap-3 px-3 md:px-4 py-2 bg-background-light rounded-lg md:rounded-xl"
+              >
+                <span class="material-icons text-primary text-sm md:text-base"
+                  >event</span
+                >
+                <div class="text-left">
+                  <div
+                    class="font-semibold text-brand-brown text-sm md:text-base"
+                  >
+                    Twice a Month
+                  </div>
+                  <div class="text-xs md:text-sm text-brand-gray">
+                    As per lunar calendar
+                  </div>
+                </div>
+              </div>
+              <div class="text-left">
+                <div class="text-xs md:text-sm text-brand-gray mb-1">
+                  Next Ekadashi:
+                </div>
+                <div class="font-semibold text-primary text-sm md:text-base">
+                  March 5, 2024
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monthly Event 2 -->
+        <div
+          class="group bg-white p-4 sm:p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl md:hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-secondary/20 hover:-translate-y-1 md:hover:-translate-y-2"
+        >
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-lg md:rounded-2xl mb-4 md:mb-6 mx-auto group-hover:scale-105 md:group-hover:scale-110 transition-transform duration-300"
+          >
+            <span
+              class="material-icons text-secondary text-2xl sm:text-3xl md:text-4xl"
+              >cake</span
+            >
+          </div>
+
+          <div class="text-center">
+            <div class="flex justify-center mb-3 md:mb-4">
+              <span
+                class="px-2 md:px-3 py-1 bg-secondary/10 text-secondary text-xs md:text-sm font-semibold rounded-full"
+                >Monthly</span
+              >
+            </div>
+            <h4
+              class="text-lg sm:text-xl md:text-2xl font-bold text-brand-brown mb-2 md:mb-3"
+            >
+              Monthly Annakut
+            </h4>
+            <p
+              class="text-brand-gray text-sm md:text-base mb-4 md:mb-6 leading-relaxed"
+            >
+              Grand offering of 108+ varieties of vegetarian dishes to the
+              deities on the first day of every month.
+            </p>
+
+            <div class="space-y-3 md:space-y-4">
+              <div
+                class="flex items-center gap-2 md:gap-3 px-3 md:px-4 py-2 bg-background-light rounded-lg md:rounded-xl"
+              >
+                <span class="material-icons text-secondary text-sm md:text-base"
+                  >calendar_today</span
+                >
+                <div class="text-left">
+                  <div
+                    class="font-semibold text-brand-brown text-sm md:text-base"
+                  >
+                    First Day of Month
+                  </div>
+                  <div class="text-xs md:text-sm text-brand-gray">
+                    Morning & Evening
+                  </div>
+                </div>
+              </div>
+              <div class="text-left">
+                <div class="text-xs md:text-sm text-brand-gray mb-1">
+                  Next Annakut:
+                </div>
+                <div class="font-semibold text-secondary text-sm md:text-base">
+                  April 1, 2024
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monthly Event 3 -->
+        <div
+          class="group bg-white p-4 sm:p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl md:hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-primary/20 hover:-translate-y-1 md:hover:-translate-y-2"
+        >
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg md:rounded-2xl mb-4 md:mb-6 mx-auto group-hover:scale-105 md:group-hover:scale-110 transition-transform duration-300"
+          >
+            <span
+              class="material-icons text-primary text-2xl sm:text-3xl md:text-4xl"
+              >groups</span
+            >
+          </div>
+
+          <div class="text-center">
+            <div class="flex justify-center mb-3 md:mb-4">
+              <span
+                class="px-2 md:px-3 py-1 bg-primary/10 text-primary text-xs md:text-sm font-semibold rounded-full"
+                >Monthly Gathering</span
+              >
+            </div>
+            <h4
+              class="text-lg sm:text-xl md:text-2xl font-bold text-brand-brown mb-2 md:mb-3"
+            >
+              Devotee Sangha
+            </h4>
+            <p
+              class="text-brand-gray text-sm md:text-base mb-4 md:mb-6 leading-relaxed"
+            >
+              Monthly gathering of devotees for spiritual discussions, Q&A
+              sessions, and community bonding.
+            </p>
+
+            <div class="space-y-3 md:space-y-4">
+              <div
+                class="flex items-center gap-2 md:gap-3 px-3 md:px-4 py-2 bg-background-light rounded-lg md:rounded-xl"
+              >
+                <span class="material-icons text-primary text-sm md:text-base"
+                  >forum</span
+                >
+                <div class="text-left">
+                  <div
+                    class="font-semibold text-brand-brown text-sm md:text-base"
+                  >
+                    Last Sunday
+                  </div>
+                  <div class="text-xs md:text-sm text-brand-gray">
+                    4:00 PM - 6:00 PM
+                  </div>
+                </div>
+              </div>
+              <div class="text-left">
+                <div class="text-xs md:text-sm text-brand-gray mb-1">
+                  Next Sangha:
+                </div>
+                <div class="font-semibold text-primary text-sm md:text-base">
+                  March 31, 2024
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Programs -->
+  <section class="py-12 md:py-16 lg:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8 md:mb-12 lg:mb-16">
+        <h2
+          class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 md:mb-4"
+        >
+          Special Programs
+        </h2>
+        <p
+          class="text-brand-gray text-sm sm:text-base md:text-lg max-w-2xl mx-auto"
+        >
+          Unique spiritual programs and retreats
+        </p>
+      </div>
+
+      <div class="grid gap-4 md:gap-6 lg:gap-8 md:grid-cols-2">
+        <!-- Special Program 1 -->
+        <div
+          class="bg-gradient-to-br from-white to-background-light border border-secondary/10 rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 hover:shadow-lg md:hover:shadow-xl transition-shadow duration-300"
+        >
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-center gap-3 md:gap-4 mb-4 md:mb-6"
+          >
+            <div
+              class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-secondary/10 rounded-lg md:rounded-xl flex items-center justify-center flex-shrink-0"
+            >
+              <span
+                class="material-icons text-secondary text-xl sm:text-2xl md:text-3xl"
+                >self_improvement</span
+              >
+            </div>
+            <div>
+              <h3
+                class="text-lg sm:text-xl md:text-2xl font-bold text-brand-brown"
+              >
+                Bhagavad Gita Retreat
+              </h3>
+              <p class="text-brand-gray text-sm md:text-base">
+                3-day intensive study
+              </p>
+            </div>
+          </div>
+          <p class="text-brand-gray text-sm md:text-base mb-4 md:mb-6">
+            Immerse yourself in the wisdom of Bhagavad Gita with guided
+            meditation, interactive sessions, and practical applications.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3"
+          >
+            <div>
+              <div class="text-xs md:text-sm text-brand-gray">
+                Next Session:
+              </div>
+              <div class="font-bold text-secondary text-sm md:text-base">
+                April 15-17, 2024
+              </div>
+            </div>
+            <a
+              href="#"
+              class="px-3 py-1.5 md:px-4 md:py-2 bg-secondary text-white rounded-lg hover:bg-secondary-hover transition-colors text-sm md:text-base w-full sm:w-auto text-center"
+            >
+              Register Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Special Program 2 -->
+        <div
+          class="bg-gradient-to-br from-white to-background-light border border-primary/10 rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 hover:shadow-lg md:hover:shadow-xl transition-shadow duration-300"
+        >
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-center gap-3 md:gap-4 mb-4 md:mb-6"
+          >
+            <div
+              class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-primary/10 rounded-lg md:rounded-xl flex items-center justify-center flex-shrink-0"
+            >
+              <span
+                class="material-icons text-primary text-xl sm:text-2xl md:text-3xl"
+                >music_note</span
+              >
+            </div>
+            <div>
+              <h3
+                class="text-lg sm:text-xl md:text-2xl font-bold text-brand-brown"
+              >
+                Kirtan Workshop
+              </h3>
+              <p class="text-brand-gray text-sm md:text-base">
+                Learn devotional singing
+              </p>
+            </div>
+          </div>
+          <p class="text-brand-gray text-sm md:text-base mb-4 md:mb-6">
+            Learn traditional kirtan melodies, instruments, and the art of
+            congregational chanting from experienced devotees.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3"
+          >
+            <div>
+              <div class="text-xs md:text-sm text-brand-gray">
+                Next Workshop:
+              </div>
+              <div class="font-bold text-primary text-sm md:text-base">
+                March 25, 2024
+              </div>
+            </div>
+            <a
+              href="#"
+              class="px-3 py-1.5 md:px-4 md:py-2 bg-primary text-white rounded-lg hover:bg-primary-hover transition-colors text-sm md:text-base w-full sm:w-auto text-center"
+            >
+              Join Workshop
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Calendar CTA -->
+  <section
+    class="py-12 md:py-16 bg-gradient-to-r from-primary/5 to-secondary/5"
+  >
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="bg-white rounded-xl md:rounded-2xl shadow-lg md:shadow-xl p-4 sm:p-6 md:p-8 lg:p-12"
+      >
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8"
+        >
+          <div class="text-center lg:text-left">
+            <div
+              class="flex items-center gap-2 md:gap-3 mb-3 md:mb-4 justify-center lg:justify-start"
+            >
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-primary/10 rounded-lg md:rounded-xl flex items-center justify-center"
+              >
+                <span
+                  class="material-icons text-primary text-lg sm:text-xl md:text-2xl"
+                  >calendar_today</span
+                >
+              </div>
+              <h3
+                class="text-xl sm:text-2xl md:text-3xl font-bold text-brand-brown"
+              >
+                Full Event Calendar
+              </h3>
+            </div>
+            <p class="text-brand-gray text-sm md:text-base max-w-2xl">
+              View our complete calendar with all festivals, special days, and
+              programs for the entire year. Never miss an important spiritual
+              event.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row gap-3 md:gap-4 w-full sm:w-auto"
+          >
+            <a
+              href="#"
+              class="px-4 py-2.5 md:px-6 md:py-3 bg-primary text-white rounded-lg md:rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 hover:shadow-lg flex items-center justify-center gap-1 md:gap-2 text-sm md:text-base"
+            >
+              <span class="material-icons text-sm md:text-base"
+                >calendar_month</span
+              >
+              View Full Calendar
+            </a>
+            <a
+              href="/book-seva"
+              class="px-4 py-2.5 md:px-6 md:py-3 bg-white text-primary border border-primary/20 md:border-2 rounded-lg md:rounded-xl font-semibold hover:bg-primary/5 transition-all duration-300 flex items-center justify-center gap-1 md:gap-2 text-sm md:text-base"
+            >
+              <span class="material-icons text-sm md:text-base"
+                >book_online</span
+              >
+              Book Special Seva
+            </a>
+          </div>
+        </div>
+
+        <!-- Calendar Preview -->
+        <div class="mt-8 md:mt-12 border-t border-gray-100 pt-6 md:pt-8">
+          <h4
+            class="text-lg md:text-xl font-bold text-brand-brown mb-4 md:mb-6 text-center"
+          >
+            March 2024 Highlights
+          </h4>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 md:gap-3 lg:gap-4">
+            <div
+              class="text-center p-2 md:p-3 lg:p-4 bg-background-light rounded-lg md:rounded-xl"
+            >
+              <div class="text-xs md:text-sm text-brand-gray">Mar 5</div>
+              <div class="font-semibold text-brand-brown text-sm md:text-base">
+                Ekadashi
+              </div>
+            </div>
+            <div
+              class="text-center p-2 md:p-3 lg:p-4 bg-background-light rounded-lg md:rounded-xl"
+            >
+              <div class="text-xs md:text-sm text-brand-gray">Mar 10</div>
+              <div class="font-semibold text-brand-brown text-sm md:text-base">
+                Youth Retreat
+              </div>
+            </div>
+            <div
+              class="text-center p-2 md:p-3 lg:p-4 bg-background-light rounded-lg md:rounded-xl"
+            >
+              <div class="text-xs md:text-sm text-brand-gray">Mar 18</div>
+              <div class="font-semibold text-brand-brown text-sm md:text-base">
+                Gaura Purnima
+              </div>
+            </div>
+            <div
+              class="text-center p-2 md:p-3 lg:p-4 bg-background-light rounded-lg md:rounded-xl"
+            >
+              <div class="text-xs md:text-sm text-brand-gray">Mar 25</div>
+              <div class="font-semibold text-brand-brown text-sm md:text-base">
+                Kirtan Workshop
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-12 md:py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div
+        class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg md:rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6"
+      >
+        <span
+          class="material-icons text-primary text-xl sm:text-2xl md:text-3xl"
+          >notifications</span
+        >
+      </div>
+      <h3
+        class="text-xl sm:text-2xl md:text-3xl font-bold text-brand-brown mb-3 md:mb-4"
+      >
+        Stay Updated on Events
+      </h3>
+      <p
+        class="text-brand-gray text-sm md:text-base mb-6 md:mb-8 max-w-2xl mx-auto"
+      >
+        Subscribe to receive monthly event calendars, festival reminders, and
+        special program notifications directly in your inbox.
+      </p>
+
+      <form class="max-w-md mx-auto">
+        <div class="flex flex-col sm:flex-row gap-2 md:gap-3">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="flex-grow px-3 py-2.5 md:px-4 md:py-3 border border-gray-300 rounded-lg md:rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm md:text-base"
+          />
+          <button
+            type="submit"
+            class="px-4 py-2.5 md:px-6 md:py-3 bg-primary text-white rounded-lg md:rounded-xl font-semibold hover:bg-primary-hover transition-colors text-sm md:text-base"
+          >
+            Subscribe
+          </button>
+        </div>
+        <p class="text-xs md:text-sm text-brand-gray mt-3 md:mt-4">
+          We respect your privacy. Unsubscribe at any time.
+        </p>
+      </form>
+    </div>
+  </section>
+</Layout>

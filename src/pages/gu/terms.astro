@@ -1,0 +1,454 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { seoData } from "../../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.terms;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <!-- હીરો -->
+  <section
+    class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-gradient-to-br from-background-light via-white to-background-section"
+  >
+    <!-- સુશોભન પૃષ્ઠભૂમિ -->
+    <div class="absolute inset-0 opacity-5">
+      <div
+        class="absolute top-10 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl"
+      >
+      </div>
+    </div>
+
+    <!-- એનિમેટેડ ફ્લોટિંગ તત્વો -->
+    <div
+      class="absolute top-1/4 left-5 w-8 h-8 bg-primary/10 rounded-full animate-pulse"
+    >
+    </div>
+    <div
+      class="absolute bottom-1/3 right-1/4 w-12 h-12 bg-secondary/10 rounded-full animate-pulse delay-1000"
+    >
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <div
+        class="inline-flex items-center gap-2 mb-5 px-5 py-2 bg-primary/10 rounded-full"
+      >
+        <span class="material-icons text-primary text-sm">gavel</span>
+        <span class="text-primary font-semibold text-sm">કાનૂની માહિતી</span
+        >
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="block text-gray-900">નિબંધો અને શરતો</span>
+        <span
+          class="text-transparent bg-gradient-to-r from-secondary to-primary bg-clip-text"
+          >ઇસ્કોન વરાછા, સુરત</span
+        >
+      </h1>
+
+      <p class="text-lg text-brand-gray max-w-3xl mx-auto mb-8">
+        આ નિબંધો ઇસ્કોન વરાછા વેબસાઇટ, સેવાઓ અને આધ્યાત્મિક સંસાધનોની તમારી પહોંચ અને ઉપયોગને નિયંત્રિત કરે છે.
+      </p>
+
+      <div
+        class="flex items-center justify-center gap-4 text-sm text-brand-gray"
+      >
+        <span class="flex items-center gap-2">
+          <span class="material-icons text-primary text-sm">update</span>
+          છેલ્લું અપડેટ: જાન્યુઆરી ૨૦૨૫
+        </span>
+        <span class="h-4 w-px bg-brand-gray/20"></span>
+        <span class="flex items-center gap-2">
+          <span class="material-icons text-primary text-sm">verified</span>
+          કૃપા કરીને કાળજીપૂર્વક વાંચો
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- સામગ્રી -->
+  <section
+    class="py-16 md:py-24 bg-gradient-to-b from-white to-background-light/30"
+  >
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- ઝડપી નેવિગેશન -->
+      <div
+        class="mb-12 bg-white rounded-2xl p-6 shadow-lg border border-brand-brown/5"
+      >
+        <h3
+          class="text-xl font-bold text-brand-brown mb-4 flex items-center gap-2"
+        >
+          <span class="material-icons">list</span>
+          ઝડપી નેવિગેશન
+        </h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <a
+            href="#acceptance"
+            class="text-sm px-4 py-2 bg-background-light text-brand-brown rounded-lg hover:bg-primary/10 hover:text-primary transition-all duration-300 flex items-center gap-2"
+          >
+            <span class="material-icons text-xs">done</span>
+            સ્વીકૃતિ
+          </a>
+          <a
+            href="#purpose"
+            class="text-sm px-4 py-2 bg-background-light text-brand-brown rounded-lg hover:bg-primary/10 hover:text-primary transition-all duration-300 flex items-center gap-2"
+          >
+            <span class="material-icons text-xs">flag</span>
+            હેતુ
+          </a>
+          <a
+            href="#donations"
+            class="text-sm px-4 py-2 bg-background-light text-brand-brown rounded-lg hover:bg-primary/10 hover:text-primary transition-all duration-300 flex items-center gap-2"
+          >
+            <span class="material-icons text-xs">payments</span>
+            દાન
+          </a>
+          <a
+            href="#privacy"
+            class="text-sm px-4 py-2 bg-background-light text-brand-brown rounded-lg hover:bg-primary/10 hover:text-primary transition-all duration-300 flex items-center gap-2"
+          >
+            <span class="material-icons text-xs">privacy_tip</span>
+            ગોપનીયતા
+          </a>
+        </div>
+      </div>
+
+      <div class="space-y-8">
+        <!-- કાર્ડ 1 -->
+        <div
+          id="acceptance"
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">check_circle</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-3">
+                <h2 class="text-2xl font-bold text-brand-brown">
+                  ૧. નિબંધોની સ્વીકૃતિ
+                </h2>
+                <span
+                  class="hidden md:inline-flex items-center gap-1 px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full"
+                >
+                  <span class="material-icons text-sm">warning</span>
+                  આવશ્યક
+                </span>
+              </div>
+              <p class="text-brand-gray leading-relaxed mb-4">
+                આ વેબસાઇટ ઍક્સેસ કરીને અથવા ઉપયોગ કરીને, તમે સ્વીકારો છો કે તમે આ નિબંધો અને શરતો વાંચ્યા છે, સમજ્યા છે અને તેનાથી બંધાવા માટે સંમત છો. જો તમે સંમત નથી, તો તમારે તરત જ ઉપયોગ બંધ કરવો આવશ્યક છે.
+              </p>
+              <div class="flex items-center gap-3 text-sm text-brand-gray">
+                <span class="material-icons text-primary text-sm">info</span>
+                <span
+                  >તમારો સતત ઉપયોગ આ નિબંધોની સ્વીકૃતિ દર્શાવે છે</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- કાર્ડ 2 -->
+        <div
+          id="purpose"
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary">flag</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૨. વેબસાઇટનો હેતુ
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-6">
+                આ વેબસાઇટ ઇસ્કોન વરાછા, સુરત દ્વારા વૈદિક સિદ્ધાંતો સાથે સંરેખિત આધ્યાત્મિક જ્ઞાન, મંદિર માહિતી, ઇવેન્ટ અપડેટ્સ, શૈક્ષણિક સંસાધનો અને સમુદાય આઉટરીચ કાર્યક્રમો પ્રદાન કરવા માટે સંચાલિત કરવામાં આવે છે.
+              </p>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div
+                  class="flex items-center gap-3 p-3 bg-background-light rounded-xl"
+                >
+                  <span class="material-icons text-primary">temple_hindu</span>
+                  <span class="text-sm text-brand-gray">મંદિર માહિતી</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-3 p-3 bg-background-light rounded-xl"
+                >
+                  <span class="material-icons text-primary">menu_book</span>
+                  <span class="text-sm text-brand-gray"
+                    >આધ્યાત્મિક સંસાધનો</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- કાર્ડ 3 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">person</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૩. વપરાશકર્તા જવાબદારીઓ
+              </h2>
+              <ul class="space-y-4 text-brand-gray">
+                <li class="flex items-start gap-3">
+                  <span class="material-icons text-primary text-sm mt-1"
+                    >verified</span
+                  >
+                  <span
+                    >વેબસાઇટનો ઉપયોગ માત્ર કાનૂની અને આદરપૂર્ણ હેતુઓ માટે કરો</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-icons text-primary text-sm mt-1"
+                    >verified</span
+                  >
+                  <span
+                    >વેબસાઇટ સુરક્ષામાં વિક્ષેપ, નુકસાન અથવા દખલગીરી ન કરો</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-icons text-primary text-sm mt-1"
+                    >verified</span
+                  >
+                  <span>આધ્યાત્મિક અથવા કૉપિરાઇટ સામગ્રીનો દુરુપયોગ ન કરો</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-icons text-primary text-sm mt-1"
+                    >verified</span
+                  >
+                  <span
+                    >બધા વપરાશકર્તાઓની સાંસ્કૃતિક અને ધાર્મિક લાગણીઓનો આદર કરો</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- કાર્ડ 4 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary">copyright</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૪. બૌદ્ધિક સંપત્તિ
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-4">
+                લખાણ, શાસ્ત્રો, છબીઓ, વીડિયો, ગ્રાફિક્સ અને લોગોસ સહિતની બધી સામગ્રી લાગુ બૌદ્ધિક સંપત્તિ કાયદાઓ હેઠળ સુરક્ષિત છે. લેખિત સંમતિ વિના કોઈપણ પ્રતિરૂપ, સુધારણા અથવા પુનઃવિતરણ પ્રતિબંધિત છે.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >કૉપિરાઇટ © ઇસ્કોન</span
+                >
+                <span
+                  class="px-3 py-1 bg-secondary/10 text-secondary text-sm rounded-full"
+                  >બધા હક્કો અનામત</span
+                >
+                <span
+                  class="px-3 py-1 bg-brand-brown/10 text-brand-brown text-sm rounded-full"
+                  >સુરક્ષિત સામગ્રી</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- કાર્ડ 5 -->
+        <div
+          id="donations"
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">payments</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૫. દાન અને સેવાઓ
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-4">
+                આ પ્લેટફોર્મ દ્વારા કરવામાં આવતા દાનો સ્વૈચ્છિક અને અનાથવશ્યક સિવાય બિન-રિફંડેબલ છે. મંદિર પ્રવૃત્તિઓ અને ધર્માદા ઉદ્દેશ્યો અનુસાર દાનોને ફાળવવાનો અધિકાર ઇસ્કોન વરાછા પાસે છે.
+              </p>
+              <div class="bg-background-light rounded-xl p-4">
+                <div class="flex items-center gap-3 text-sm text-brand-gray">
+                  <span class="material-icons text-primary">info</span>
+                  <span
+                    >આવકવેરા અધિનિયમની કલમ 80G હેઠળ દાનો કર-મુક્ત છે</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- કાર્ડ 6 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary">shield</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૬. જવાબદારીની મર્યાદા
+              </h2>
+              <p class="text-brand-gray leading-relaxed">
+                આ વેબસાઇટના તમારા ઉપયોગ અથવા અહીં પૂરી પાડવામાં આવેલી કોઈપણ માહિતી પર નિર્ભરતામાંથી થતા કોઈપણ પ્રત્યક્ષ, પરોક્ષ, આકસ્મિક અથવા પરિણામી નુકસાન માટે ઇસ્કોન વરાછા જવાબદાર નહીં હોય. આધ્યાત્મિક સામગ્રી માત્ર શૈક્ષણિક હેતુઓ માટે પૂરી પાડવામાં આવે છે.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- કાર્ડ 7 -->
+        <div
+          id="privacy"
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary">update</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૭. સુધારા અને અપડેટ્સ
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-4">
+                આ નિબંધો સામયિક રીતે પૂર્વ સૂચના વિના અપડેટ કરી શકાય છે. વેબસાઇટનો સતત ઉપયોગ સુધારેલા નિબંધોની સ્વીકૃતિ દર્શાવે છે. નોંધપાત્ર ફેરફારો વેબસાઇટ જાહેરાતો દ્વારા સંચાર કરવામાં આવશે.
+              </p>
+              <div class="flex items-center gap-4 text-sm text-brand-gray">
+                <span class="flex items-center gap-2">
+                  <span class="material-icons text-primary text-sm"
+                    >notifications</span
+                  >
+                  અપડેટ્સ માટે નિયમિત રીતે તપાસો
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- કાર્ડ 8 -->
+        <div
+          class="group bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary">contact_support</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-brand-brown mb-3">
+                ૮. સંપર્ક માહિતી
+              </h2>
+              <p class="text-brand-gray leading-relaxed mb-6">
+                આ નિબંધો અને શરતો સંબંધિત કોઈપણ પ્રશ્નો માટે, કૃપા કરીને અમારી અધિકૃત ચેનલો દ્વારા મંદિર વ્યવસ્થાપનનો સંપર્ક કરો.
+              </p>
+              <a
+                href="/contact"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300"
+              >
+                <span class="material-icons">mail</span>
+                મંદિર ઓફિસનો સંપર્ક કરો
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- અંતિમ નોંધ -->
+      <div
+        class="mt-12 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/10"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-6"
+        >
+          <div class="text-center md:text-left">
+            <h3
+              class="text-xl font-bold text-brand-brown mb-2 flex items-center gap-2"
+            >
+              <span class="material-icons text-primary">description</span>
+              સ્વીકૃતિ આવશ્યક
+            </h3>
+            <p class="text-brand-gray">
+              આ વેબસાઇટનો ઉપયોગ કરીને, તમે પુષ્ટિ કરો છો કે તમે ઉપરોક્ત બધા નિબંધો અને શરતો વાંચ્યા છે અને તેનાથી સંમત છો.
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="material-icons text-primary">check</span>
+            <span class="font-semibold text-brand-brown"
+              >હું સમજું છું અને સંમત છું</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- છેલ્લું અપડેટ -->
+      <div class="mt-12 pt-8 border-t border-brand-brown/10">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-brand-gray"
+        >
+          <div class="flex items-center gap-4">
+            <span class="flex items-center gap-2">
+              <span class="material-icons text-primary">update</span>
+              છેલ્લું અપડેટ: <strong class="text-brand-brown ml-1"
+                >જાન્યુઆરી ૨૦૨૫</strong
+              >
+            </span>
+            <span class="hidden md:block h-4 w-px bg-brand-gray/20"></span>
+            <span class="flex items-center gap-2">
+              <span class="material-icons text-primary">policy</span>
+              અમારી <a
+                href="/privacy"
+                class="text-primary hover:underline">ગોપનીયતા નીતિ</a
+              > પણ સમીક્ષા કરો
+            </span>
+          </div>
+          <div>
+            <button
+              onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+              class="flex items-center gap-2 px-4 py-2 text-sm text-brand-gray hover:text-primary transition-colors"
+            >
+              <span class="material-icons text-sm">arrow_upward</span>
+              ટોપ પર પાછા જાઓ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

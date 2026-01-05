@@ -1,0 +1,39 @@
+{
+  "header": {
+    "home": "મુખપૃષ્ઠ",
+    "events": "કાર્યક્રમો",
+    "donateSeva": "દાન અને સેવા",
+    "donate": "દાન કરો",
+    "bookSeva": "સેવા બુક કરો",
+    "about": "અમારા વિશે",
+    "others": "અન્ય",
+    "templeTimings": "મંદિર સમય",
+    "dailyPrograms": "દૈનિક કાર્યક્રમો",
+    "blogs": "બ્લોગ્સ",
+    "contact": "સંપર્ક કરો"
+  },
+
+  "footer": {
+    "visitUs": "અમારો સંપર્ક કરો",
+    "templeName": "ઇસ્કોન વરાછા",
+    "addressLine1": "ભગિની મંદિર સામે, મન્નાથલ સર્કલ પાસે,",
+    "addressLine2": "સુરત, ગુજરાત - 395006",
+    "phone": "+91 261 2201000",
+    "email": "info@iskconvarachha.com",
+
+    "quickLinks": "ઝડપી લિંક્સ",
+    "templeTimings": "મંદિર સમય",
+    "dailyPrograms": "દૈનિક કાર્યક્રમો",
+    "donate": "ઓનલાઇન દાન",
+    "bookSeva": "સેવા બુક કરો",
+    "privacy": "ગોપનીયતા નીતિ",
+
+    "stayConnected": "સંપર્કમાં રહો",
+    "subscribeText": "કાર્યક્રમો અને ઇવેન્ટ્સ માટે અપડેટ મેળવવા સબસ્ક્રાઇબ કરો",
+    "emailPlaceholder": "તમારો ઇમેઇલ",
+    "subscribe": "સબસ્ક્રાઇબ કરો",
+
+    "rights": "સર્વ હક સુરક્ષિત.",
+    "terms": "નિયમો અને શરતો"
+  }
+}

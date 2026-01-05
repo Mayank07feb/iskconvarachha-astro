@@ -1,0 +1,441 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { seoData } from "../../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.donate;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <section
+    class="pt-20 pb-16 md:pt-28 md:pb-20 bg-gradient-to-br from-background-light via-white to-background-section relative overflow-hidden"
+  >
+    <!-- Decorative elements -->
+    <div
+      class="absolute top-10 left-10 w-24 h-24 bg-primary/5 rounded-full blur-xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-10 right-10 w-32 h-32 bg-secondary/5 rounded-full blur-xl"
+    >
+    </div>
+    <div
+      class="absolute top-1/2 left-1/4 w-16 h-16 bg-brand-saffron/5 rounded-full blur-lg"
+    >
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <div
+        class="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-primary/10 rounded-full"
+      >
+        <span class="material-icons text-primary text-sm"
+          >volunteer_activism</span
+        >
+        <span class="text-primary text-sm font-medium">Support the Temple</span>
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="block text-gray-900">Support the Temple</span>
+        <span
+          class="text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text"
+          >With Your Donation</span
+        >
+      </h1>
+
+      <p class="text-xl text-brand-gray max-w-3xl mx-auto mb-8 leading-relaxed">
+        Your contribution sustains deity worship, spiritual programs, and
+        community service. Every donation helps spread divine consciousness.
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="py-16 md:py-20 bg-gradient-to-b from-white to-background-light/30"
+  >
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          Make a Donation
+        </h2>
+        <p class="text-brand-gray text-lg max-w-2xl mx-auto">
+          Choose from these sacred donation options to serve Sri Sri Radha Gopal
+          Ji
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <!-- Quick Donation Option 1 -->
+        <div
+          class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-primary/5 hover:border-primary/20 hover:-translate-y-1 h-full flex flex-col"
+        >
+          <div class="text-center flex-1 flex flex-col">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl mb-4 mx-auto group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary text-3xl">rice_bowl</span
+              >
+            </div>
+            <h4 class="text-xl font-bold text-brand-brown mb-2">
+              Feed Devotees
+            </h4>
+            <p class="text-brand-gray text-sm mb-4 flex-1">
+              Sponsor prasadam for 50 devotees
+            </p>
+            <div class="text-2xl font-bold text-primary mb-4">₹1,108</div>
+            <button
+              class="w-full py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 min-h-[48px]"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Donation Option 2 -->
+        <div
+          class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-primary/5 hover:border-primary/20 hover:-translate-y-1 h-full flex flex-col"
+        >
+          <div class="text-center flex-1 flex flex-col">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-2xl mb-4 mx-auto group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary text-3xl"
+                >local_florist</span
+              >
+            </div>
+            <h4 class="text-xl font-bold text-brand-brown mb-2">
+              Daily Flowers
+            </h4>
+            <p class="text-brand-gray text-sm mb-4 flex-1">
+              Sponsor flowers for deities
+            </p>
+            <div class="text-2xl font-bold text-secondary mb-4">₹2,501</div>
+            <button
+              class="w-full py-3 bg-secondary text-white rounded-xl font-semibold hover:bg-secondary-hover transition-all duration-300 min-h-[48px]"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Donation Option 3 -->
+        <div
+          class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-primary/5 hover:border-primary/20 hover:-translate-y-1 h-full flex flex-col"
+        >
+          <div class="text-center flex-1 flex flex-col">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl mb-4 mx-auto group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-primary text-3xl">book</span>
+            </div>
+            <h4 class="text-xl font-bold text-brand-brown mb-2">
+              Scripture Fund
+            </h4>
+            <p class="text-brand-gray text-sm mb-4 flex-1">
+              Support spiritual literature
+            </p>
+            <div class="text-2xl font-bold text-primary mb-4">₹5,001</div>
+            <button
+              class="w-full py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 min-h-[48px]"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Donation Option 4 -->
+        <div
+          class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-primary/5 hover:border-primary/20 hover:-translate-y-1 h-full flex flex-col"
+        >
+          <div class="text-center flex-1 flex flex-col">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-2xl mb-4 mx-auto group-hover:scale-110 transition-transform duration-300"
+            >
+              <span class="material-icons text-secondary text-3xl"
+                >construction</span
+              >
+            </div>
+            <h4 class="text-xl font-bold text-brand-brown mb-2">
+              Temple Maintenance
+            </h4>
+            <p class="text-brand-gray text-sm mb-4 flex-1">
+              Support temple upkeep
+            </p>
+            <div class="text-2xl font-bold text-secondary mb-4">₹10,001</div>
+            <button
+              class="w-full py-3 bg-secondary text-white rounded-xl font-semibold hover:bg-secondary-hover transition-all duration-300 min-h-[48px]"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Amount -->
+      <div
+        class="bg-white rounded-2xl p-6 md:p-8 shadow-lg mb-16 border border-brand-brown/5"
+      >
+        <div class="text-center mb-8">
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl mb-6 mx-auto"
+          >
+            <span class="material-icons text-primary text-3xl md:text-4xl"
+              >paid</span
+            >
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-brand-brown mb-4">
+            Custom Donation Amount
+          </h3>
+          <p class="text-brand-gray max-w-2xl mx-auto">
+            Enter any amount you wish to contribute. All donations are accepted
+            with gratitude.
+          </p>
+        </div>
+
+        <div class="max-w-md mx-auto">
+          <div class="relative mb-6">
+            <span
+              class="absolute left-4 top-1/2 transform -translate-y-1/2 text-xl md:text-2xl font-bold text-brand-brown"
+              >₹</span
+            >
+            <input
+              type="number"
+              placeholder="Enter amount"
+              class="w-full pl-12 pr-6 py-4 text-xl md:text-2xl font-bold text-brand-brown border-2 border-brand-brown/20 rounded-xl focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            />
+          </div>
+
+          <div class="grid grid-cols-3 gap-2 md:gap-3 mb-8">
+            <button
+              class="py-3 bg-background-light text-brand-brown rounded-lg font-semibold hover:bg-primary/10 transition-all duration-300 min-h-[44px] text-sm md:text-base"
+            >
+              ₹101
+            </button>
+            <button
+              class="py-3 bg-background-light text-brand-brown rounded-lg font-semibold hover:bg-primary/10 transition-all duration-300 min-h-[44px] text-sm md:text-base"
+            >
+              ₹501
+            </button>
+            <button
+              class="py-3 bg-background-light text-brand-brown rounded-lg font-semibold hover:bg-primary/10 transition-all duration-300 min-h-[44px] text-sm md:text-base"
+            >
+              ₹1,001
+            </button>
+            <button
+              class="py-3 bg-background-light text-brand-brown rounded-lg font-semibold hover:bg-primary/10 transition-all duration-300 min-h-[44px] text-sm md:text-base"
+            >
+              ₹2,501
+            </button>
+            <button
+              class="py-3 bg-background-light text-brand-brown rounded-lg font-semibold hover:bg-primary/10 transition-all duration-300 min-h-[44px] text-sm md:text-base"
+            >
+              ₹5,001
+            </button>
+            <button
+              class="py-3 bg-background-light text-brand-brown rounded-lg font-semibold hover:bg-primary/10 transition-all duration-300 min-h-[44px] text-sm md:text-base"
+            >
+              Other
+            </button>
+          </div>
+
+          <button
+            class="w-full py-4 bg-gradient-to-r from-primary to-secondary text-white text-lg md:text-xl font-bold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 min-h-[56px]"
+          >
+            <span class="material-icons">payments</span>
+            <span class="text-sm md:text-base">Proceed to Donate</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- How Donations Are Used -->
+      <div class="mb-16">
+        <h3
+          class="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-8 md:mb-12"
+        >
+          <span class="flex items-center justify-center gap-3">
+            <span class="material-icons text-primary">analytics</span>
+            <span class="text-sm md:text-base">How Your Donation Helps</span>
+          </span>
+        </h3>
+
+        <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+          <div
+            class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-brand-brown/5 h-full"
+          >
+            <h4
+              class="text-xl md:text-2xl font-bold text-brand-brown mb-6 flex items-center gap-3"
+            >
+              <span class="material-icons text-primary">temple_hindu</span>
+              Temple Services
+            </h4>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm mt-1 flex-shrink-0"
+                  >check_circle</span
+                >
+                <div class="flex-1">
+                  <span class="font-semibold text-brand-brown"
+                    >Deity Worship:</span
+                  >
+                  <span class="text-brand-gray text-sm md:text-base">
+                    Daily aartis, offerings, and decorations</span
+                  >
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm mt-1 flex-shrink-0"
+                  >check_circle</span
+                >
+                <div class="flex-1">
+                  <span class="font-semibold text-brand-brown"
+                    >Prasadam Distribution:</span
+                  >
+                  <span class="text-brand-gray text-sm md:text-base">
+                    Free meals for devotees and visitors</span
+                  >
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm mt-1 flex-shrink-0"
+                  >check_circle</span
+                >
+                <div class="flex-1">
+                  <span class="font-semibold text-brand-brown"
+                    >Temple Maintenance:</span
+                  >
+                  <span class="text-brand-gray text-sm md:text-base">
+                    Cleaning, utilities, and facility upkeep</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-brand-brown/5 h-full"
+          >
+            <h4
+              class="text-xl md:text-2xl font-bold text-brand-brown mb-6 flex items-center gap-3"
+            >
+              <span class="material-icons text-secondary">school</span>
+              Outreach Programs
+            </h4>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-secondary text-sm mt-1 flex-shrink-0"
+                  >check_circle</span
+                >
+                <div class="flex-1">
+                  <span class="font-semibold text-brand-brown"
+                    >Spiritual Education:</span
+                  >
+                  <span class="text-brand-gray text-sm md:text-base">
+                    Bhagavad Gita classes and workshops</span
+                  >
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-secondary text-sm mt-1 flex-shrink-0"
+                  >check_circle</span
+                >
+                <div class="flex-1">
+                  <span class="font-semibold text-brand-brown"
+                    >Community Service:</span
+                  >
+                  <span class="text-brand-gray text-sm md:text-base">
+                    Food distribution, medical camps, and aid</span
+                  >
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-secondary text-sm mt-1 flex-shrink-0"
+                  >check_circle</span
+                >
+                <div class="flex-1">
+                  <span class="font-semibold text-brand-brown"
+                    >Youth Programs:</span
+                  >
+                  <span class="text-brand-gray text-sm md:text-base">
+                    Spiritual and cultural activities for youth</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security & Tax Info -->
+      <div
+        class="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-6 md:p-8 border border-primary/10"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8"
+        >
+          <div class="text-center md:text-left w-full md:w-auto">
+            <div class="flex flex-col sm:flex-row items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm flex-shrink-0"
+              >
+                <span class="material-icons text-primary text-2xl"
+                  >security</span
+                >
+              </div>
+              <div class="text-center sm:text-left">
+                <h3 class="text-lg md:text-xl font-bold text-brand-brown">
+                  Secure & Transparent
+                </h3>
+                <p class="text-brand-gray text-sm">
+                  Your donation is safe with us
+                </p>
+              </div>
+            </div>
+            <ul class="space-y-2 text-brand-gray text-sm md:text-base">
+              <li class="flex items-start md:items-center gap-2">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5 md:mt-0"
+                  >verified</span
+                >
+                SSL Secure Payment Gateway
+              </li>
+              <li class="flex items-start md:items-center gap-2">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5 md:mt-0"
+                  >verified</span
+                >
+                Tax-Exempt Receipts Provided
+              </li>
+              <li class="flex items-start md:items-center gap-2">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5 md:mt-0"
+                  >verified</span
+                >
+                Complete Financial Transparency
+              </li>
+            </ul>
+          </div>
+
+          <div class="text-center w-full md:w-auto">
+            <div class="text-sm text-brand-gray mb-2">
+              Need help with your donation?
+            </div>
+            <a
+              href="/contact"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-primary border-2 border-primary/20 rounded-xl font-semibold hover:bg-primary/5 transition-all duration-300 min-w-[200px]"
+            >
+              <span class="material-icons">contact_support</span>
+              <span class="text-sm md:text-base">Contact Temple Office</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

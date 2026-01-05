@@ -1,0 +1,520 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { seoData } from "../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.templeTimings;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <!-- Hero Section -->
+  <section
+    class="pt-20 pb-16 md:pt-28 md:pb-20 bg-gradient-to-br from-background-light via-white to-background-section relative overflow-hidden"
+  >
+    <!-- Decorative elements -->
+    <div
+      class="absolute top-10 left-10 w-24 h-24 bg-primary/5 rounded-full blur-xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-10 right-10 w-32 h-32 bg-brand-saffron/5 rounded-full blur-xl"
+    >
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <div
+        class="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-secondary/10 rounded-full"
+      >
+        <span class="material-icons text-secondary text-sm">schedule</span>
+        <span class="text-secondary text-sm font-medium">Daily Schedule</span>
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="block text-gray-900">Temple Timings</span>
+        <span
+          class="text-transparent bg-gradient-to-r from-secondary to-primary bg-clip-text"
+          >ISKCON Varachha</span
+        >
+      </h1>
+
+      <p class="text-xl text-brand-gray max-w-3xl mx-auto mb-8 leading-relaxed">
+        Daily darshan, aarti, and spiritual program timings. Plan your visit to
+        experience the divine presence of Sri Sri Radha Gopal Ji.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a
+          href="#daily-schedule"
+          class="px-8 py-4 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2"
+        >
+          <span class="material-icons">today</span>
+          View Daily Schedule
+        </a>
+        <a
+          href="#festivals"
+          class="px-8 py-4 bg-white text-primary border-2 border-primary/20 rounded-xl font-semibold hover:bg-primary/5 transition-all duration-300 flex items-center gap-2"
+        >
+          <span class="material-icons">festival</span>
+          Festival Calendar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Daily Schedule Section -->
+  <section
+    id="daily-schedule"
+    class="py-16 md:py-20 bg-gradient-to-b from-white to-background-light/30"
+  >
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          Daily Schedule
+        </h2>
+        <p class="text-brand-gray text-lg max-w-2xl mx-auto">
+          Regular temple activities and spiritual programs throughout the day
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- Morning Schedule -->
+        <div
+          class="bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-shadow duration-300"
+        >
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-orange-50 to-primary/10 rounded-2xl"
+            >
+              <span class="material-icons text-primary text-3xl"
+                >wb_twilight</span
+              >
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-brand-brown">
+                Morning Schedule
+              </h3>
+              <p class="text-brand-gray text-sm">Sunrise to Noon Programs</p>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="flex items-center justify-between p-4 bg-background-light rounded-xl"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center"
+                >
+                  <span class="material-icons text-primary">spa</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-brand-brown">Mangala Aarti</h4>
+                  <p class="text-brand-gray text-sm">First morning worship</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xl font-bold text-secondary">4:30 AM</span>
+                <p class="text-brand-gray text-sm">Duration: 30 mins</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-between p-4 bg-background-light rounded-xl"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center"
+                >
+                  <span class="material-icons text-secondary">visibility</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-brand-brown">
+                    Morning Darshan
+                  </h4>
+                  <p class="text-brand-gray text-sm">Deity viewing begins</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xl font-bold text-secondary">7:15 AM</span>
+                <p class="text-brand-gray text-sm">All morning</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-between p-4 bg-background-light rounded-xl"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center"
+                >
+                  <span class="material-icons text-primary">celebration</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-brand-brown">Shringar Aarti</h4>
+                  <p class="text-brand-gray text-sm">
+                    Deity decoration worship
+                  </p>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xl font-bold text-secondary">7:30 AM</span>
+                <p class="text-brand-gray text-sm">Duration: 30 mins</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-between p-4 bg-background-light rounded-xl"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center"
+                >
+                  <span class="material-icons text-secondary">person_pin</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-brand-brown">Guru Puja</h4>
+                  <p class="text-brand-gray text-sm">
+                    Spiritual master worship
+                  </p>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xl font-bold text-secondary">8:00 AM</span>
+                <p class="text-brand-gray text-sm">Duration: 45 mins</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-6 border-t border-brand-brown/10">
+            <div class="flex items-center gap-3 text-sm text-brand-gray">
+              <span class="material-icons text-primary">info</span>
+              <p>Morning prasadam distribution starts at 8:45 AM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evening Schedule -->
+        <div
+          class="bg-white rounded-3xl p-6 md:p-8 shadow-lg border border-brand-brown/5 hover:shadow-xl transition-shadow duration-300"
+        >
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-secondary/10 to-brand-maroon/10 rounded-2xl"
+            >
+              <span class="material-icons text-secondary text-3xl"
+                >nights_stay</span
+              >
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-brand-brown">
+                Evening Schedule
+              </h3>
+              <p class="text-brand-gray text-sm">Afternoon to Night Programs</p>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="flex items-center justify-between p-4 bg-background-light rounded-xl"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center"
+                >
+                  <span class="material-icons text-primary">whatshot</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-brand-brown">Dhupa Aarti</h4>
+                  <p class="text-brand-gray text-sm">Lamp offering ceremony</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xl font-bold text-secondary">4:30 PM</span>
+                <p class="text-brand-gray text-sm">Duration: 30 mins</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-between p-4 bg-background-light rounded-xl"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center"
+                >
+                  <span class="material-icons text-secondary">nights_stay</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-brand-brown">Sandhya Aarti</h4>
+                  <p class="text-brand-gray text-sm">Evening lamp ceremony</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xl font-bold text-secondary">7:00 PM</span>
+                <p class="text-brand-gray text-sm">Duration: 45 mins</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-between p-4 bg-background-light rounded-xl"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center"
+                >
+                  <span class="material-icons text-primary">menu_book</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-brand-brown">
+                    Bhagavad Gita Class
+                  </h4>
+                  <p class="text-brand-gray text-sm">Spiritual discourse</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xl font-bold text-secondary">7:30 PM</span>
+                <p class="text-brand-gray text-sm">Duration: 60 mins</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-between p-4 bg-background-light rounded-xl"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center"
+                >
+                  <span class="material-icons text-secondary">door_front</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-brand-brown">Temple Closing</h4>
+                  <p class="text-brand-gray text-sm">Final darshan ends</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xl font-bold text-secondary">9:00 PM</span>
+                <p class="text-brand-gray text-sm">Until next morning</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-6 border-t border-brand-brown/10">
+            <div class="flex items-center gap-3 text-sm text-brand-gray">
+              <span class="material-icons text-primary">restaurant</span>
+              <p>Evening prasadam distribution: 8:15 PM - 8:45 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Special Notes -->
+      <div
+        class="mt-12 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-6 md:p-8 border border-primary/10"
+      >
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0">
+            <div
+              class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm"
+            >
+              <span class="material-icons text-primary text-2xl">info</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-brand-brown mb-2">
+              Important Information
+            </h3>
+            <ul class="space-y-3 text-brand-gray">
+              <li class="flex items-start gap-3">
+                <span class="material-icons text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                <span
+                  >Temple remains open throughout the day between morning and
+                  evening schedules</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-icons text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                <span
+                  >Sunday and festival days have extended hours and special
+                  programs</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-icons text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                <span
+                  >Prasadam is served twice daily after morning and evening
+                  aartis</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-icons text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                <span>All timings are in Indian Standard Time (IST)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly Special Programs -->
+  <section id="weekly-programs" class="py-16 md:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          Weekly Special Programs
+        </h2>
+        <p class="text-brand-gray text-lg max-w-2xl mx-auto">
+          Additional spiritual activities on specific days of the week
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Sunday -->
+        <div
+          class="bg-background-light rounded-2xl p-6 text-center hover:shadow-lg transition-shadow duration-300"
+        >
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 bg-primary text-white rounded-2xl mb-4 mx-auto"
+          >
+            <span class="material-icons text-3xl">weekend</span>
+          </div>
+          <h3 class="text-xl font-bold text-brand-brown mb-2">Sunday</h3>
+          <p class="text-brand-gray text-sm mb-3">Special Day</p>
+          <ul class="text-sm text-brand-gray space-y-2 text-left">
+            <li class="flex items-center gap-2">
+              <span class="material-icons text-primary text-sm"
+                >celebration</span
+              >
+              Special Aarti: 10 AM
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-icons text-primary text-sm">people</span>
+              Children Program: 4 PM
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tuesday -->
+        <div
+          class="bg-background-light rounded-2xl p-6 text-center hover:shadow-lg transition-shadow duration-300"
+        >
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 bg-secondary text-white rounded-2xl mb-4 mx-auto"
+          >
+            <span class="material-icons text-3xl">library_books</span>
+          </div>
+          <h3 class="text-xl font-bold text-brand-brown mb-2">Tuesday</h3>
+          <p class="text-brand-gray text-sm mb-3">Srimad Bhagavatam</p>
+          <ul class="text-sm text-brand-gray space-y-2 text-left">
+            <li class="flex items-center gap-2">
+              <span class="material-icons text-secondary text-sm"
+                >record_voice_over</span
+              >
+              Discourse: 6:30 PM
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-icons text-secondary text-sm">group</span>
+              Study Circle
+            </li>
+          </ul>
+        </div>
+
+        <!-- Thursday -->
+        <div
+          class="bg-background-light rounded-2xl p-6 text-center hover:shadow-lg transition-shadow duration-300"
+        >
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 bg-primary text-white rounded-2xl mb-4 mx-auto"
+          >
+            <span class="material-icons text-3xl">music_note</span>
+          </div>
+          <h3 class="text-xl font-bold text-brand-brown mb-2">Thursday</h3>
+          <p class="text-brand-gray text-sm mb-3">Kirtan Evening</p>
+          <ul class="text-sm text-brand-gray space-y-2 text-left">
+            <li class="flex items-center gap-2">
+              <span class="material-icons text-primary text-sm">mic</span>
+              Devotional Songs: 6 PM
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-icons text-primary text-sm">dance</span>
+              Congregational Dance
+            </li>
+          </ul>
+        </div>
+
+        <!-- Saturday -->
+        <div
+          class="bg-background-light rounded-2xl p-6 text-center hover:shadow-lg transition-shadow duration-300"
+        >
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 bg-secondary text-white rounded-2xl mb-4 mx-auto"
+          >
+            <span class="material-icons text-3xl">volunteer_activism</span>
+          </div>
+          <h3 class="text-xl font-bold text-brand-brown mb-2">Saturday</h3>
+          <p class="text-brand-gray text-sm mb-3">Youth Program</p>
+          <ul class="text-sm text-brand-gray space-y-2 text-left">
+            <li class="flex items-center gap-2">
+              <span class="material-icons text-secondary text-sm">groups</span>
+              Youth Forum: 5 PM
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-icons text-secondary text-sm"
+                >sports_kabaddi</span
+              >
+              Sports & Activities
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section
+    class="py-16 md:py-20 bg-gradient-to-br from-background-light to-background-section"
+  >
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div
+        class="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-white rounded-full shadow-sm"
+      >
+        <span class="material-icons text-primary">notifications_active</span>
+        <span class="text-secondary text-sm font-medium">Stay Updated</span>
+      </div>
+
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Never Miss a Program
+      </h2>
+      <p class="text-brand-gray text-lg max-w-2xl mx-auto mb-8">
+        Get updates on special events, festival schedules, and program changes
+        directly on your phone.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a
+          href="/sevas"
+          class="px-8 py-4 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2"
+        >
+          <span class="material-icons">event_available</span>
+          Book Special Seva
+        </a>
+        <a
+          href="/subscribe"
+          class="px-8 py-4 bg-white text-primary border-2 border-primary/20 rounded-xl font-semibold hover:bg-primary/5 transition-all duration-300 flex items-center gap-2"
+        >
+          <span class="material-icons">notifications</span>
+          Get Schedule Updates
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

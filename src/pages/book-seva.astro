@@ -1,0 +1,439 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { seoData } from "../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.bookSeva;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <!-- Hero Section -->
+  <section
+    class="pt-20 pb-16 md:pt-28 md:pb-20 bg-gradient-to-br from-background-light via-white to-background-section relative overflow-hidden"
+  >
+    <!-- Decorative elements -->
+    <div
+      class="absolute top-10 left-10 w-24 h-24 bg-primary/5 rounded-full blur-xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-10 right-10 w-32 h-32 bg-brand-saffron/5 rounded-full blur-xl"
+    >
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <div
+        class="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-secondary/10 rounded-full"
+      >
+        <span class="material-icons text-secondary text-sm">spa</span>
+        <span class="text-secondary text-sm font-medium"
+          >Devotional Services</span
+        >
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="block text-gray-900">Book a Sacred Seva</span>
+        <span
+          class="text-transparent bg-gradient-to-r from-secondary to-primary bg-clip-text"
+          >For Radha Gopal Ji</span
+        >
+      </h1>
+
+      <p class="text-xl text-brand-gray max-w-3xl mx-auto mb-8 leading-relaxed">
+        Participate in divine services and receive the blessings of Sri Sri
+        Radha Gopal Ji. Each seva is an opportunity for spiritual connection and
+        devotional expression.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a
+          href="#sevas"
+          class="px-8 py-4 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2"
+        >
+          <span class="material-icons">view_list</span>
+          View Available Sevas
+        </a>
+        <a
+          href="#process"
+          class="px-8 py-4 bg-white text-primary border-2 border-primary/20 rounded-xl font-semibold hover:bg-primary/5 transition-all duration-300 flex items-center gap-2"
+        >
+          <span class="material-icons">help_outline</span>
+          How It Works
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sevas Section -->
+  <section
+    id="sevas"
+    class="py-16 md:py-20 bg-gradient-to-b from-white to-background-light/30"
+  >
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          Choose Your Seva
+        </h2>
+        <p class="text-brand-gray text-lg max-w-2xl mx-auto">
+          Select from these sacred services. Each seva includes prasadam and a
+          personalized certificate.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- Seva Card 1 -->
+        <div
+          class="group bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-primary/20 hover:-translate-y-2 h-full flex flex-col"
+        >
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300"
+          >
+            <span class="material-icons text-secondary text-3xl"
+              >water_drop</span
+            >
+          </div>
+
+          <div class="text-left flex-1 flex flex-col">
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between mb-3 gap-2"
+            >
+              <h4 class="text-xl md:text-2xl font-bold text-brand-brown">
+                Abhishek Seva
+              </h4>
+              <span
+                class="px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full flex items-center gap-1 self-start sm:self-auto"
+              >
+                <span class="material-icons text-sm">schedule</span>
+                45 mins
+              </span>
+            </div>
+
+            <p class="text-brand-gray mb-6 leading-relaxed flex-1">
+              Sacred bathing ceremony with milk, honey, yogurt, ghee, and flower
+              petals. Performed during sunrise for maximum spiritual benefit.
+            </p>
+
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <span class="text-sm text-brand-gray"
+                  >Five sacred ingredients</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <span class="text-sm text-brand-gray"
+                  >Vedic mantras chanting</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <span class="text-sm text-brand-gray"
+                  >Special prasadam included</span
+                >
+              </li>
+            </ul>
+
+            <div
+              class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between pt-6 border-t border-brand-brown/10 gap-4"
+            >
+              <div class="text-center sm:text-left">
+                <span class="text-2xl font-bold text-brand-brown">₹1,501</span>
+                <span class="text-brand-gray/70 text-sm block"
+                  >Traditional offering</span
+                >
+              </div>
+              <button
+                class="px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 group-hover:shadow-lg flex items-center justify-center gap-2 min-w-[140px] sm:min-w-[150px] text-sm sm:text-base"
+              >
+                <span class="material-icons text-lg">event_available</span>
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seva Card 2 -->
+        <div
+          class="group bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-primary/20 hover:-translate-y-2 h-full flex flex-col"
+        >
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300"
+          >
+            <span class="material-icons text-primary text-3xl"
+              >local_florist</span
+            >
+          </div>
+
+          <div class="text-left flex-1 flex flex-col">
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between mb-3 gap-2"
+            >
+              <h4 class="text-xl md:text-2xl font-bold text-brand-brown">
+                Alankar Seva
+              </h4>
+              <span
+                class="px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full flex items-center gap-1 self-start sm:self-auto"
+              >
+                <span class="material-icons text-sm">schedule</span>
+                60 mins
+              </span>
+            </div>
+
+            <p class="text-brand-gray mb-6 leading-relaxed flex-1">
+              Divine decoration with fresh flowers, traditional attire, and
+              ornaments. Witness the deities adorned in seasonal themes.
+            </p>
+
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <span class="text-sm text-brand-gray"
+                  >Seasonal flower decoration</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <span class="text-sm text-brand-gray"
+                  >Special festive attire</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <span class="text-sm text-brand-gray"
+                  >Photo of deities provided</span
+                >
+              </li>
+            </ul>
+
+            <div
+              class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between pt-6 border-t border-brand-brown/10 gap-4"
+            >
+              <div class="text-center sm:text-left">
+                <span class="text-2xl font-bold text-brand-brown">₹2,501</span>
+                <span class="text-brand-gray/70 text-sm block"
+                  >Festive offering</span
+                >
+              </div>
+              <button
+                class="px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 group-hover:shadow-lg flex items-center justify-center gap-2 min-w-[140px] sm:min-w-[150px] text-sm sm:text-base"
+              >
+                <span class="material-icons text-lg">event_available</span>
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seva Card 3 -->
+        <div
+          class="group bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-primary/20 hover:-translate-y-2 h-full flex flex-col"
+        >
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300"
+          >
+            <span class="material-icons text-secondary text-3xl"
+              >lunch_dining</span
+            >
+          </div>
+
+          <div class="text-left flex-1 flex flex-col">
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between mb-3 gap-2"
+            >
+              <h4 class="text-xl md:text-2xl font-bold text-brand-brown">
+                Anna Daan
+              </h4>
+              <span
+                class="px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full flex items-center gap-1 self-start sm:self-auto"
+              >
+                <span class="material-icons text-sm">schedule</span>
+                All day
+              </span>
+            </div>
+
+            <p class="text-brand-gray mb-6 leading-relaxed flex-1">
+              Sacred food offering and distribution to devotees. Feed 108
+              devotees with blessed mahaprasadam.
+            </p>
+
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <span class="text-sm text-brand-gray">Feeds 108 devotees</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <span class="text-sm text-brand-gray">Full meal prasadam</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-icons text-primary text-sm flex-shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <span class="text-sm text-brand-gray"
+                  >Blessings certificate</span
+                >
+              </li>
+            </ul>
+
+            <div
+              class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between pt-6 border-t border-brand-brown/10 gap-4"
+            >
+              <div class="text-center sm:text-left">
+                <span class="text-2xl font-bold text-brand-brown">₹5,001</span>
+                <span class="text-brand-gray/70 text-sm block"
+                  >Community seva</span
+                >
+              </div>
+              <button
+                class="px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 group-hover:shadow-lg flex items-center justify-center gap-2 min-w-[140px] sm:min-w-[150px] text-sm sm:text-base"
+              >
+                <span class="material-icons text-lg">event_available</span>
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Info -->
+      <div
+        class="mt-16 md:mt-20 bg-gradient-to-r from-secondary/5 to-primary/5 rounded-2xl p-6 md:p-8 border border-secondary/10"
+      >
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-sm mb-4 mx-auto"
+            >
+              <span class="material-icons text-primary text-2xl"
+                >schedule_send</span
+              >
+            </div>
+            <div class="text-3xl text-secondary font-bold mb-2">
+              24-48 Hours
+            </div>
+            <div class="text-brand-gray">Confirmation Time</div>
+          </div>
+          <div class="text-center">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-sm mb-4 mx-auto"
+            >
+              <span class="material-icons text-primary text-2xl">videocam</span>
+            </div>
+            <div class="text-3xl text-secondary font-bold mb-2">
+              Live Darshan
+            </div>
+            <div class="text-brand-gray">Available upon request</div>
+          </div>
+          <div class="text-center">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-sm mb-4 mx-auto"
+            >
+              <span class="material-icons text-primary text-2xl"
+                >local_shipping</span
+              >
+            </div>
+            <div class="text-3xl text-secondary font-bold mb-2">
+              Prasadam Delivery
+            </div>
+            <div class="text-brand-gray">Across India</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="py-16 md:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          Simple Booking Process
+        </h2>
+        <p class="text-brand-gray text-lg max-w-2xl mx-auto">
+          Follow these three simple steps to book your seva
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 relative">
+        <!-- Process line -->
+        <div
+          class="hidden md:block absolute top-12 left-1/4 right-1/4 h-1 bg-gradient-to-r from-secondary/20 to-primary/20"
+        >
+        </div>
+
+        <!-- Step 1 -->
+        <div class="relative text-center">
+          <div
+            class="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-primary text-white text-2xl md:text-3xl font-bold rounded-full mb-6 mx-auto border-8 border-white shadow-lg"
+          >
+            <span class="material-icons text-3xl">checklist</span>
+          </div>
+          <h4 class="text-xl md:text-2xl font-bold text-secondary mb-4">
+            Select Seva
+          </h4>
+          <p class="text-brand-gray">
+            Choose from our sacred services and select your preferred date
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative text-center">
+          <div
+            class="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-primary text-white text-2xl md:text-3xl font-bold rounded-full mb-6 mx-auto border-8 border-white shadow-lg"
+          >
+            <span class="material-icons text-3xl">payments</span>
+          </div>
+          <h4 class="text-xl md:text-2xl font-bold text-secondary mb-4">
+            Make Offering
+          </h4>
+          <p class="text-brand-gray">
+            Complete the devotional offering through secure payment
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative text-center">
+          <div
+            class="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-primary text-white text-2xl md:text-3xl font-bold rounded-full mb-6 mx-auto border-8 border-white shadow-lg"
+          >
+            <span class="material-icons text-3xl">confirmation_number</span>
+          </div>
+          <h4 class="text-xl md:text-2xl font-bold text-secondary mb-4">
+            Receive Confirmation
+          </h4>
+          <p class="text-brand-gray">
+            Get seva details, timing, and prasadam information via email
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

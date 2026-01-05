@@ -1,0 +1,39 @@
+{
+  "header": {
+    "home": "Home",
+    "events": "Events",
+    "donateSeva": "Donate & Seva",
+    "donate": "Donate",
+    "bookSeva": "Book Seva",
+    "about": "About",
+    "others": "Others",
+    "templeTimings": "Temple Timings",
+    "dailyPrograms": "Daily Programs",
+    "blogs": "Blogs",
+    "contact": "Contact Us"
+  },
+
+  "footer": {
+    "visitUs": "Visit Us",
+    "templeName": "ISKCON Varachha",
+    "addressLine1": "Opp. Bhagini Temple, Nr. Mannathal Circle,",
+    "addressLine2": "Surat, Gujarat - 395006",
+    "phone": "+91 261 2201000",
+    "email": "info@iskconvarachha.com",
+
+    "quickLinks": "Quick Links",
+    "templeTimings": "Temple Timings",
+    "dailyPrograms": "Daily Programs",
+    "donate": "Donate Online",
+    "bookSeva": "Book Seva",
+    "privacy": "Privacy Policy",
+
+    "stayConnected": "Stay Connected",
+    "subscribeText": "Subscribe to receive updates about programs and events",
+    "emailPlaceholder": "Your email",
+    "subscribe": "Subscribe",
+
+    "rights": "All rights reserved.",
+    "terms": "Terms & Conditions"
+  }
+}

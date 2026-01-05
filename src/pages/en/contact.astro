@@ -1,0 +1,377 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { seoData } from "../../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.contact;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <!-- Hero Section -->
+  <section
+    class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-background-light via-white to-background-section"
+  >
+    <div class="absolute inset-0 opacity-5">
+      <div
+        class="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl"
+      >
+      </div>
+    </div>
+
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
+    >
+      <div class="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
+        <p class="text-primary font-semibold text-sm">Get In Touch</p>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="gradient-text">Contact Us</span>
+      </h1>
+      <p class="text-lg text-brand-gray max-w-3xl mx-auto">
+        We'd love to hear from you. Visit us, call us, or send us a message.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Information Cards -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <!-- Address Card -->
+        <div
+          class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 text-center hover-lift"
+        >
+          <div
+            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-white text-3xl">location_on</span>
+          </div>
+          <h3 class="text-xl font-bold text-brand-brown mb-3">Visit Us</h3>
+          <p class="text-brand-gray mb-2">ISKCON Varachha</p>
+          <p class="text-brand-gray text-sm">
+            Opp. Bhagini Temple, Nr. Mannathal Circle
+          </p>
+          <p class="text-brand-gray text-sm">Surat, Gujarat - 395006</p>
+          <button
+            class="mt-4 px-6 py-2 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary-hover transition"
+          >
+            Get Directions
+          </button>
+        </div>
+
+        <!-- Phone Card -->
+        <div
+          class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-3xl p-8 text-center hover-lift"
+        >
+          <div
+            class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-white text-3xl">phone</span>
+          </div>
+          <h3 class="text-xl font-bold text-brand-brown mb-3">Call Us</h3>
+          <p class="text-brand-gray mb-2">Phone</p>
+          <p class="text-lg font-semibold text-secondary mb-1">
+            +91 261 2201000
+          </p>
+          <p class="text-brand-gray text-sm mb-2">Temple Office</p>
+          <p class="text-lg font-semibold text-secondary">+91 98765 43210</p>
+          <p class="text-brand-gray text-sm">General Enquiries</p>
+        </div>
+
+        <!-- Email Card -->
+        <div
+          class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 text-center hover-lift"
+        >
+          <div
+            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-white text-3xl">email</span>
+          </div>
+          <h3 class="text-xl font-bold text-brand-brown mb-3">Email Us</h3>
+          <p class="text-brand-gray mb-2">General Enquiries</p>
+          <p class="text-secondary font-semibold mb-3">
+            info@iskconvarachha.com
+          </p>
+          <p class="text-brand-gray mb-2">Donations</p>
+          <p class="text-secondary font-semibold">donate@iskconvarachha.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Map -->
+  <section
+    class="py-20 bg-gradient-to-br from-background-light to-background-section"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+          <h2 class="text-3xl font-bold text-brand-brown mb-6">
+            Send Us a Message
+          </h2>
+          <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-brand-gray font-semibold mb-2"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  placeholder="Enter your first name"
+                />
+              </div>
+              <div>
+                <label class="block text-brand-gray font-semibold mb-2"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  placeholder="Enter your last name"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-brand-gray font-semibold mb-2"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                placeholder="your.email@example.com"
+              />
+            </div>
+
+            <div>
+              <label class="block text-brand-gray font-semibold mb-2"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                placeholder="+91 98765 43210"
+              />
+            </div>
+
+            <div>
+              <label class="block text-brand-gray font-semibold mb-2"
+                >Subject</label
+              >
+              <select
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+              >
+                <option>General Enquiry</option>
+                <option>Temple Visit</option>
+                <option>Donation Information</option>
+                <option>Event Booking</option>
+                <option>Volunteer Opportunity</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-brand-gray font-semibold mb-2"
+                >Message</label
+              >
+              <textarea
+                rows="5"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full px-8 py-4 bg-gradient-to-r from-primary to-primary-hover text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Map & Temple Timings -->
+        <div class="space-y-8">
+          <!-- Map -->
+          <div
+            class="bg-white rounded-3xl shadow-2xl overflow-hidden h-[400px]"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.9!2d72.8!3d21.17!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDEwJzEyLjAiTiA3MsKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+
+          <!-- Temple Timings -->
+          <div class="bg-white rounded-3xl shadow-2xl p-8">
+            <h3 class="text-2xl font-bold text-brand-brown mb-6">
+              Temple Timings
+            </h3>
+            <div class="space-y-4">
+              <div
+                class="flex justify-between items-center pb-3 border-b border-gray-200"
+              >
+                <div class="flex items-center">
+                  <span class="material-icons text-primary mr-3">wb_sunny</span>
+                  <span class="font-semibold text-brand-brown"
+                    >Mangala Aarti</span
+                  >
+                </div>
+                <span class="text-brand-gray">4:30 AM</span>
+              </div>
+
+              <div
+                class="flex justify-between items-center pb-3 border-b border-gray-200"
+              >
+                <div class="flex items-center">
+                  <span class="material-icons text-primary mr-3"
+                    >wb_twilight</span
+                  >
+                  <span class="font-semibold text-brand-brown"
+                    >Darshan Opens</span
+                  >
+                </div>
+                <span class="text-brand-gray">7:00 AM</span>
+              </div>
+
+              <div
+                class="flex justify-between items-center pb-3 border-b border-gray-200"
+              >
+                <div class="flex items-center">
+                  <span class="material-icons text-secondary mr-3"
+                    >restaurant</span
+                  >
+                  <span class="font-semibold text-brand-brown"
+                    >Raj Bhoga Aarti</span
+                  >
+                </div>
+                <span class="text-brand-gray">12:30 PM</span>
+              </div>
+
+              <div
+                class="flex justify-between items-center pb-3 border-b border-gray-200"
+              >
+                <div class="flex items-center">
+                  <span class="material-icons text-secondary mr-3"
+                    >nightlight</span
+                  >
+                  <span class="font-semibold text-brand-brown"
+                    >Sandhya Aarti</span
+                  >
+                </div>
+                <span class="text-brand-gray">7:00 PM</span>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                  <span class="material-icons text-primary mr-3">bedtime</span>
+                  <span class="font-semibold text-brand-brown"
+                    >Shayan Aarti</span
+                  >
+                </div>
+                <span class="text-brand-gray">8:30 PM</span>
+              </div>
+            </div>
+
+            <div class="mt-6 p-4 bg-background-light rounded-xl">
+              <p class="text-sm text-brand-gray text-center">
+                <span class="material-icons text-primary text-sm align-middle"
+                  >info</span
+                >
+                Temple open daily from 4:30 AM to 9:00 PM
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">
+          <span class="gradient-text">Frequently Asked Questions</span>
+        </h2>
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"
+        >
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="bg-background-light rounded-2xl p-6">
+          <h4 class="font-bold text-brand-brown mb-2">
+            What are the temple visiting hours?
+          </h4>
+          <p class="text-brand-gray">
+            The temple is open daily from 4:30 AM to 9:00 PM. Darshan is
+            available throughout the day except during deity rest time (1:30 PM
+            - 4:00 PM).
+          </p>
+        </div>
+
+        <div class="bg-background-light rounded-2xl p-6">
+          <h4 class="font-bold text-brand-brown mb-2">
+            Is there any dress code for visiting the temple?
+          </h4>
+          <p class="text-brand-gray">
+            We request visitors to dress modestly. Traditional Indian attire or
+            formal wear is preferred. Please avoid shorts, sleeveless tops, and
+            revealing clothing.
+          </p>
+        </div>
+
+        <div class="bg-background-light rounded-2xl p-6">
+          <h4 class="font-bold text-brand-brown mb-2">
+            Can I participate in the daily programs?
+          </h4>
+          <p class="text-brand-gray">
+            Yes! Everyone is welcome to participate in our daily aarti, kirtan,
+            and Bhagavad Gita classes. Check our schedule for specific timings.
+          </p>
+        </div>
+
+        <div class="bg-background-light rounded-2xl p-6">
+          <h4 class="font-bold text-brand-brown mb-2">
+            How can I volunteer at ISKCON Varachha?
+          </h4>
+          <p class="text-brand-gray">
+            We welcome volunteers in various services. Please contact us through
+            the form above or visit the temple office to learn about volunteer
+            opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-bold mb-6">Visit Us Today</h2>
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        Experience divine peace and spiritual bliss at ISKCON Varachha. We look
+        forward to welcoming you!
+      </p>
+      <button
+        class="px-8 py-4 bg-white text-primary rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition"
+      >
+        Plan Your Visit
+      </button>
+    </div>
+  </section>
+</Layout>

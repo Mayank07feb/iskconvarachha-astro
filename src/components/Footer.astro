@@ -1,0 +1,129 @@
+---
+import en from "../i18n/en.json";
+import gu from "../i18n/gu.json";
+
+/* Detect locale from URL */
+const pathname = Astro.url.pathname;
+const locale = pathname.startsWith("/gu") ? "gu" : "en";
+
+/* Translation object */
+const t = locale === "gu" ? gu.footer : en.footer;
+
+/* Base path */
+const base = locale === "gu" ? "/gu" : "/en";
+---
+
+<!-- Footer Section -->
+<footer class="py-14 md:py-20 bg-gradient-to-br from-primary via-brand-saffron to-secondary text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-xl md:text-2xl font-bold mb-5">{t.visitUs}</h3>
+
+        <div class="space-y-4">
+          <div class="flex items-start justify-center md:justify-start">
+            <span class="material-icons mr-3 mt-1">location_on</span>
+            <div>
+              <p class="font-semibold mb-1">{t.templeName}</p>
+              <p class="text-white/80 text-sm leading-relaxed">
+                {t.addressLine1}<br />
+                {t.addressLine2}
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center md:justify-start">
+            <span class="material-icons mr-3">phone</span>
+            <span class="text-white/90 text-sm">{t.phone}</span>
+          </div>
+
+          <div class="flex items-center justify-center md:justify-start">
+            <span class="material-icons mr-3">email</span>
+            <span class="text-white/90 text-sm">{t.email}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-xl md:text-2xl font-bold mb-5">{t.quickLinks}</h3>
+        <div class="space-y-3">
+          <a href={`${base}/temple-timings`} class="block text-white/85 hover:text-white transition text-sm">
+            {t.templeTimings}
+          </a>
+          <a href={`${base}/daily-programs`} class="block text-white/85 hover:text-white transition text-sm">
+            {t.dailyPrograms}
+          </a>
+          <a href={`${base}/donate`} class="block text-white/85 hover:text-white transition text-sm">
+            {t.donate}
+          </a>
+          <a href={`${base}/book-seva`} class="block text-white/85 hover:text-white transition text-sm">
+            {t.bookSeva}
+          </a>
+          <a href={`${base}/privacy`} class="block text-white/85 hover:text-white transition text-sm">
+            {t.privacy}
+          </a>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="text-xl md:text-2xl font-bold mb-5">{t.stayConnected}</h3>
+        <p class="text-white/80 mb-6 text-sm">
+          {t.subscribeText}
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <input
+            type="email"
+            placeholder={t.emailPlaceholder}
+            class="w-full px-4 py-3 rounded-full
+                   bg-white/20 backdrop-blur
+                   text-white placeholder-white/60
+                   border border-white/30
+                   focus:outline-none focus:border-white"
+          />
+          <button
+            class="px-6 py-3 rounded-full font-semibold
+                   bg-white text-primary hover:bg-white/90
+                   transition"
+          >
+            {t.subscribe}
+          </button>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center md:justify-start space-x-4 mt-8">
+          <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition">
+            <span class="material-icons text-sm">facebook</span>
+          </a>
+          <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition">
+            <span class="material-icons text-sm">video_library</span>
+          </a>
+          <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition">
+            <span class="material-icons text-sm">photo_camera</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-white/25 mt-12 pt-6 text-center">
+      <p class="text-white/70 text-xs sm:text-sm leading-relaxed">
+        © 2025 ISKCON Varachha, Surat. {t.rights}
+        <br class="sm:hidden" />
+        <a href={`${base}/terms`} class="hover:text-white transition ml-1">
+          {t.terms}
+        </a> |
+        <a href={`${base}/privacy`} class="hover:text-white transition ml-1">
+          {t.privacy}
+        </a>
+      </p>
+    </div>
+
+  </div>
+</footer>

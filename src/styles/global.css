@@ -1,0 +1,83 @@
+/* ===============================
+   Google Fonts Import
+   =============================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Pacifico&display=swap');
+
+/* ===============================
+   Tailwind Import (v4)
+   =============================== */
+@import "tailwindcss";
+
+/* ===============================
+   Tailwind v4 Custom Theme Tokens
+   =============================== */
+@theme {
+  /* ===============================
+     Brand / Primary Colors
+     =============================== */
+  --color-primary: #F7931E;          /* ISKCON orange */
+  --color-primary-hover: #E67E0D;
+
+  --color-secondary: #7A1F2B;        /* Maroon */
+  --color-secondary-hover: #651923;
+
+  /* ===============================
+     Background Colors
+     =============================== */
+  --color-background-light: #FFF7ED;
+  --color-background-section: #FFF1DC;
+
+  /* ===============================
+     Brand Palette
+     =============================== */
+  --color-brand-orange:  #F7931E;
+  --color-brand-saffron: #FF9F1C;
+  --color-brand-maroon:  #7A1F2B;
+  --color-brand-brown:   #4A2C1D;
+  --color-brand-gray:    #6B7280;
+
+  /* ===============================
+     Typography Colors
+     =============================== */
+  --color-text-body: #374151;
+
+  /* ===============================
+     Font Families
+     =============================== */
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-open-sans:  'Open Sans', sans-serif;
+  --font-pacifico:   'Pacifico', cursive;
+
+  /* ===============================
+     Font Sizes
+     =============================== */
+  --text-base: 15px;
+  --text-h1: 48px;
+  --text-h2: 36px;
+  --text-h3: 28px;
+  --text-h4: 22px;
+  --text-h5: 18px;
+  --text-h6: 16px;
+
+  /* ===============================
+     Header Gradient Colors
+     =============================== */
+  --color-header-from: #E5E7EB;
+  --color-header-via:  #F3F4F6;
+  --color-header-to:   #FFEDD5;
+}
+
+/* ===============================
+   Font Utility Classes
+   =============================== */
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+
+.font-open-sans {
+  font-family: var(--font-open-sans);
+}
+
+.font-pacifico {
+  font-family: var(--font-pacifico);
+}

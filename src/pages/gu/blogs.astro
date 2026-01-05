@@ -1,0 +1,638 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { seoData } from "../../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.blogs;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <!-- હીરો વિભાગ -->
+  <section
+    class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-background-light via-white to-background-section"
+  >
+    <div class="absolute inset-0 opacity-5">
+      <div
+        class="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl"
+      >
+      </div>
+    </div>
+
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
+    >
+      <div class="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
+        <p class="text-primary font-semibold text-sm">આધ્યાત્મિક જ્ઞાન</p>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="gradient-text">બ્લોગ્સ અને લેખો</span>
+      </h1>
+      <p class="text-lg text-brand-gray max-w-3xl mx-auto">
+        કૃષ્ણ ભાવનાની દુનિયાથી આધ્યાત્મિક સૂઝ, વૈદિક જ્ઞાન અને પ્રેરણાદાયી વાર્તાઓની શોધ કરો
+      </p>
+    </div>
+  </section>
+
+  <!-- શોધ અને ફિલ્ટર વિભાગ -->
+  <section class="py-12 bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+        <!-- શોધ બાર -->
+        <div class="w-full md:w-96">
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="લેખો શોધો..."
+              class="w-full px-4 py-3 pl-12 rounded-full border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            />
+            <span class="material-icons absolute left-4 top-3.5 text-brand-gray"
+              >search</span
+            >
+          </div>
+        </div>
+
+        <!-- શ્રેણી ફિલ્ટર -->
+        <div class="flex flex-wrap gap-3">
+          <button
+            class="px-6 py-2 bg-primary text-white rounded-full font-semibold hover:bg-primary-hover transition"
+          >
+            બધા
+          </button>
+          <button
+            class="px-6 py-2 bg-white text-brand-gray border border-gray-300 rounded-full font-semibold hover:bg-background-light transition"
+          >
+            ઉત્સવો
+          </button>
+          <button
+            class="px-6 py-2 bg-white text-brand-gray border border-gray-300 rounded-full font-semibold hover:bg-background-light transition"
+          >
+            ઉપદેશો
+          </button>
+          <button
+            class="px-6 py-2 bg-white text-brand-gray border border-gray-300 rounded-full font-semibold hover:bg-background-light transition"
+          >
+            વાર્તાઓ
+          </button>
+          <button
+            class="px-6 py-2 bg-white text-brand-gray border border-gray-300 rounded-full font-semibold hover:bg-background-light transition"
+          >
+            સંસ્કૃતિ
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ફિચર્ડ લેખ -->
+  <section
+    class="py-20 bg-gradient-to-br from-background-light to-background-section"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover-lift">
+        <div class="grid md:grid-cols-2 gap-0">
+          <div class="relative h-[400px] md:h-auto">
+            <img
+              src="https://images.unsplash.com/photo-1604608672516-f1b9b1a5b76c?w=800"
+              alt="ફિચર્ડ લેખ"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute top-6 left-6">
+              <span
+                class="px-4 py-2 bg-primary text-white rounded-full text-sm font-semibold"
+                >ફિચર્ડ</span
+              >
+            </div>
+          </div>
+
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+            <div class="flex items-center space-x-4 mb-4">
+              <span class="text-xs text-primary font-semibold uppercase"
+                >આધ્યાત્મિક જ્ઞાન</span
+              >
+              <span class="text-xs text-brand-gray">•</span>
+              <span class="text-xs text-brand-gray">ડિસેમ્બર ૨૦, ૨૦૨૫</span>
+            </div>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-brown mb-4">
+              ભક્તિ યોગની કળા: દિવ્ય પ્રેમનો માર્ગ
+            </h2>
+
+            <p class="text-brand-gray leading-relaxed mb-6">
+              ભક્તિ યોગની પ્રાચીન પદ્ધતિ શોધો અને જાણો કે તે પરમેશ્વર પ્રત્યેની ભક્તિ અને પ્રેમ દ્વારા આપણી ચેતનાને કેવી રીતે રૂપાંતરિત કરે છે. તમારા દૈનિક જીવનમાં ઊંડો આધ્યાત્મિક જોડાણ વિકસાવવા માટેના વ્યવહારુ પગલાં શીખો.
+            </p>
+
+            <div class="flex items-center space-x-4 mb-6">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
+                alt="લેખક"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p class="font-semibold text-brand-brown">સ્વામી કૃષ્ણ દાસ</p>
+                <p class="text-sm text-brand-gray">સિનિયર શિક્ષક</p>
+              </div>
+            </div>
+
+            <button
+              class="px-8 py-3 bg-gradient-to-r from-primary to-primary-hover text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition w-fit"
+            >
+              સંપૂર્ણ લેખ વાંચો
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- બ્લોગ ગ્રીડ -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- બ્લોગ કાર્ડ 1 -->
+        <article
+          class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift"
+        >
+          <div class="relative h-56 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1582659553576-f4b64b6ec391?w=600"
+              alt="બ્લોગ"
+              class="w-full h-full object-cover hover:scale-110 transition duration-500"
+            />
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 bg-primary/90 text-white rounded-full text-xs font-semibold"
+                >ઉત્સવો</span
+              >
+            </div>
+          </div>
+          <div class="p-6">
+            <div
+              class="flex items-center space-x-2 text-xs text-brand-gray mb-3"
+            >
+              <span class="material-icons text-xs">calendar_today</span>
+              <span>ડિસેમ્બર ૧૫, ૨૦૨૫</span>
+              <span>•</span>
+              <span>૫ મિનિટ વાંચવાનો સમય</span>
+            </div>
+            <h3
+              class="text-xl font-bold text-brand-brown mb-3 hover:text-primary transition cursor-pointer"
+            >
+              કાર્તિક માસની ઉજવણી: દિવ્ય પ્રકાશનો મહિનો
+            </h3>
+            <p class="text-brand-gray text-sm mb-4">
+              કાર્તિક માસના મહત્વ અને ભગવાન કૃષ્ણને પ્રસન્ન કરવા માટે દીવા પ્રગટાવવાની સુંદર પરંપરાની શોધ કરો. આધ્યાત્મિક લાભો અને રીતિરિવાજો વિશે જાણો.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <img
+                  src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=100"
+                  alt="લેખક"
+                  class="w-8 h-8 rounded-full object-cover"
+                />
+                <span class="text-sm text-brand-gray">રાધા દેવી</span>
+              </div>
+              <a
+                href="#"
+                class="text-secondary font-semibold text-sm hover:text-secondary-hover transition flex items-center"
+              >
+                વધુ વાંચો <span class="material-icons text-sm ml-1"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- બ્લોગ કાર્ડ 2 -->
+        <article
+          class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift"
+        >
+          <div class="relative h-56 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600"
+              alt="બ્લોગ"
+              class="w-full h-full object-cover hover:scale-110 transition duration-500"
+            />
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 bg-secondary/90 text-white rounded-full text-xs font-semibold"
+                >ઉપદેશો</span
+              >
+            </div>
+          </div>
+          <div class="p-6">
+            <div
+              class="flex items-center space-x-2 text-xs text-brand-gray mb-3"
+            >
+              <span class="material-icons text-xs">calendar_today</span>
+              <span>ડિસેમ્બર ૧૨, ૨૦૨૫</span>
+              <span>•</span>
+              <span>૮ મિનિટ વાંચવાનો સમય</span>
+            </div>
+            <h3
+              class="text-xl font-bold text-brand-brown mb-3 hover:text-primary transition cursor-pointer"
+            >
+              ભગવદ્ ગીતા સમજવી: અધ્યાય ૨ ની સૂઝ
+            </h3>
+            <p class="text-brand-gray text-sm mb-4">
+              ભગવદ્ ગીતાના બીજા અધ્યાયના ઊંડા ઉપદેશોમાં ડૂબો, જ્યાં કૃષ્ણ આત્માની પ્રકૃતિ અને આધ્યાત્મિક જ્ઞાનને પ્રગટ કરે છે.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
+                  alt="લેખક"
+                  class="w-8 h-8 rounded-full object-cover"
+                />
+                <span class="text-sm text-brand-gray">ગોપાલ પ્રભુ</span>
+              </div>
+              <a
+                href="#"
+                class="text-secondary font-semibold text-sm hover:text-secondary-hover transition flex items-center"
+              >
+                વધુ વાંચો <span class="material-icons text-sm ml-1"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- બ્લોગ કાર્ડ 3 -->
+        <article
+          class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift"
+        >
+          <div class="relative h-56 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600"
+              alt="બ્લોગ"
+              class="w-full h-full object-cover hover:scale-110 transition duration-500"
+            />
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 bg-primary/90 text-white rounded-full text-xs font-semibold"
+                >વાર્તાઓ</span
+              >
+            </div>
+          </div>
+          <div class="p-6">
+            <div
+              class="flex items-center space-x-2 text-xs text-brand-gray mb-3"
+            >
+              <span class="material-icons text-xs">calendar_today</span>
+              <span>ડિસેમ્બર ૧૦, ૨૦૨૫</span>
+              <span>•</span>
+              <span>૬ મિનિટ વાંચવાનો સમય</span>
+            </div>
+            <h3
+              class="text-xl font-bold text-brand-brown mb-3 hover:text-primary transition cursor-pointer"
+            >
+              પ્રસાદનું ચમત્કાર: ભક્તોની વાર્તાઓ
+            </h3>
+            <p class="text-brand-gray text-sm mb-4">
+              હૃદયસ્પર્શી વાર્તાઓ કે કૃષ્ણનો પ્રસાદ કેવી રીતે જીવનને બદલી દે છે અને વિશ્વભરમાં અસંખ્ય આત્માઓમાં આધ્યાત્મિક જાગૃતિ લાવે છે.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <img
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=100"
+                  alt="લેખક"
+                  class="w-8 h-8 rounded-full object-cover"
+                />
+                <span class="text-sm text-brand-gray">લલિતા માતાજી</span>
+              </div>
+              <a
+                href="#"
+                class="text-secondary font-semibold text-sm hover:text-secondary-hover transition flex items-center"
+              >
+                વધુ વાંચો <span class="material-icons text-sm ml-1"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- બ્લોગ કાર્ડ 4 -->
+        <article
+          class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift"
+        >
+          <div class="relative h-56 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1548013146-72479768bada?w=600"
+              alt="બ્લોગ"
+              class="w-full h-full object-cover hover:scale-110 transition duration-500"
+            />
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 bg-secondary/90 text-white rounded-full text-xs font-semibold"
+                >સંસ્કૃતિ</span
+              >
+            </div>
+          </div>
+          <div class="p-6">
+            <div
+              class="flex items-center space-x-2 text-xs text-brand-gray mb-3"
+            >
+              <span class="material-icons text-xs">calendar_today</span>
+              <span>ડિસેમ્બર ૮, ૨૦૨૫</span>
+              <span>•</span>
+              <span>૭ મિનિટ વાંચવાનો સમય</span>
+            </div>
+            <h3
+              class="text-xl font-bold text-brand-brown mb-3 hover:text-primary transition cursor-pointer"
+            >
+              વૈદિક સ્થાપત્ય: પવિત્ર ડિઝાઇન સિદ્ધાંતો
+            </h3>
+            <p class="text-brand-gray text-sm mb-4">
+              વૈદિક સ્થાપત્યની પ્રાચીન વિજ્ઞાનને શોધો અને જાણો કે મંદિર ડિઝાઇન કેવી રીતે આધ્યાત્મિક ઉન્નતિ અને દિવ્ય જોડાણ માટે યોગ્ય વાતાવરણ બનાવે છે.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
+                  alt="લેખક"
+                  class="w-8 h-8 rounded-full object-cover"
+                />
+                <span class="text-sm text-brand-gray">જગત દાસ</span>
+              </div>
+              <a
+                href="#"
+                class="text-secondary font-semibold text-sm hover:text-secondary-hover transition flex items-center"
+              >
+                વધુ વાંચો <span class="material-icons text-sm ml-1"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- બ્લોગ કાર્ડ 5 -->
+        <article
+          class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift"
+        >
+          <div class="relative h-56 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600"
+              alt="બ્લોગ"
+              class="w-full h-full object-cover hover:scale-110 transition duration-500"
+            />
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 bg-primary/90 text-white rounded-full text-xs font-semibold"
+                >ઉપદેશો</span
+              >
+            </div>
+          </div>
+          <div class="p-6">
+            <div
+              class="flex items-center space-x-2 text-xs text-brand-gray mb-3"
+            >
+              <span class="material-icons text-xs">calendar_today</span>
+              <span>ડિસેમ્બર ૫, ૨૦૨૫</span>
+              <span>•</span>
+              <span>૧૦ મિનિટ વાંચવાનો સમય</span>
+            </div>
+            <h3
+              class="text-xl font-bold text-brand-brown mb-3 hover:text-primary transition cursor-pointer"
+            >
+              પવિત્ર નામની શક્તિ: હરે કૃષ્ણ જપવું
+            </h3>
+            <p class="text-brand-gray text-sm mb-4">
+              હરે કૃષ્ણ મહામંત્રના ત્રાંસેન્દ્રીય શક્તિ વિશે જાણો અને જાણો કે તે કેવી રીતે ચેતનાને શુદ્ધ કરે છે અને ઈશ્વર પ્રત્યેનું સુષુપ્ત પ્રેમ જાગ્રત કરે છે.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <img
+                  src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=100"
+                  alt="લેખક"
+                  class="w-8 h-8 rounded-full object-cover"
+                />
+                <span class="text-sm text-brand-gray">કૃષ્ણા પ્રિયા</span>
+              </div>
+              <a
+                href="#"
+                class="text-secondary font-semibold text-sm hover:text-secondary-hover transition flex items-center"
+              >
+                વધુ વાંચો <span class="material-icons text-sm ml-1"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- બ્લોગ કાર્ડ 6 -->
+        <article
+          class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift"
+        >
+          <div class="relative h-56 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600"
+              alt="બ્લોગ"
+              class="w-full h-full object-cover hover:scale-110 transition duration-500"
+            />
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 bg-secondary/90 text-white rounded-full text-xs font-semibold"
+                >વાર્તાઓ</span
+              >
+            </div>
+          </div>
+          <div class="p-6">
+            <div
+              class="flex items-center space-x-2 text-xs text-brand-gray mb-3"
+            >
+              <span class="material-icons text-xs">calendar_today</span>
+              <span>ડિસેમ્બર ૩, ૨૦૨૫</span>
+              <span>•</span>
+              <span>૯ મિનિટ વાંચવાનો સમય</span>
+            </div>
+            <h3
+              class="text-xl font-bold text-brand-brown mb-3 hover:text-primary transition cursor-pointer"
+            >
+              શ્રીલા પ્રભુપાદની યાત્રા: વિશ્વાસ અને નિશ્ચય
+            </h3>
+            <p class="text-brand-gray text-sm mb-4">
+              પ્રેરણાદાયી વાર્તા કે શ્રીલા પ્રભુપાદ કેવી રીતે ૬૯ વર્ષની ઉંમરે પશ્ચિમમાં આવ્યા અને અચલ વિશ્વાસ સાથે વિશ્વભરમાં લાખો લોકોના જીવનને બદલી નાખ્યા.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
+                  alt="લેખક"
+                  class="w-8 h-8 rounded-full object-cover"
+                />
+                <span class="text-sm text-brand-gray">ભક્તિ દાસ</span>
+              </div>
+              <a
+                href="#"
+                class="text-secondary font-semibold text-sm hover:text-secondary-hover transition flex items-center"
+              >
+                વધુ વાંચો <span class="material-icons text-sm ml-1"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- પૃષ્ઠાંકન -->
+      <div class="flex justify-center items-center space-x-2 mt-16">
+        <button
+          class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-background-light transition"
+        >
+          <span class="material-icons text-brand-gray">chevron_left</span>
+        </button>
+        <button
+          class="w-10 h-10 rounded-full bg-primary text-white font-semibold"
+          >૧</button
+        >
+        <button
+          class="w-10 h-10 rounded-full border border-gray-300 text-brand-gray font-semibold hover:bg-background-light transition"
+          >૨</button
+        >
+        <button
+          class="w-10 h-10 rounded-full border border-gray-300 text-brand-gray font-semibold hover:bg-background-light transition"
+          >૩</button
+        >
+        <button
+          class="w-10 h-10 rounded-full border border-gray-300 text-brand-gray font-semibold hover:bg-background-light transition"
+          >૪</button
+        >
+        <button
+          class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-background-light transition"
+        >
+          <span class="material-icons text-brand-gray">chevron_right</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ન્યુઝલેટર વિભાગ -->
+  <section
+    class="py-20 bg-gradient-to-br from-primary via-brand-saffron to-secondary text-white"
+  >
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div
+        class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6"
+      >
+        <span class="material-icons text-white text-3xl">mail</span>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        અમારા ન્યુઝલેટરની સબ્સ્ક્રિપ્શન લો
+      </h2>
+      <p class="text-lg text-white/90 mb-8">
+        તમારા ઇનબોક્સમાં તાજેતરની આધ્યાત્મિક સૂઝ, લેખો અને અપડેટ્સ મેળવો
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+        <input
+          type="email"
+          placeholder="તમારો ઇમેઇલ દાખલ કરો"
+          class="flex-1 px-6 py-4 rounded-full text-brand-brown focus:outline-none focus:ring-4 focus:ring-white/30"
+        />
+        <button
+          class="px-8 py-4 bg-white text-primary rounded-full font-semibold hover:bg-white/90 transition shadow-lg"
+        >
+          સબ્સ્ક્રાઇબ કરો
+        </button>
+      </div>
+      <p class="text-sm text-white/70 mt-4">
+        ૫,૦૦૦+ ભક્તો અમારા સાપ્તાહિક ન્યુઝલેટર પ્રાપ્ત કરી રહ્યા છે
+      </p>
+    </div>
+  </section>
+
+  <!-- લોકપ્રિય શ્રેણીઓ -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          <span class="gradient-text">લોકપ્રિય શ્રેણીઓ</span>
+        </h2>
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"
+        >
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-6 text-center hover-lift cursor-pointer"
+        >
+          <div
+            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-white text-2xl">celebration</span>
+          </div>
+          <h4 class="font-bold text-brand-brown mb-2">ઉત્સવો</h4>
+          <p class="text-sm text-brand-gray mb-3">૨૪ લેખો</p>
+          <a
+            href="#"
+            class="text-primary font-semibold text-sm hover:text-primary-hover"
+            >શોધ કરો →</a
+          >
+        </div>
+
+        <div
+          class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-6 text-center hover-lift cursor-pointer"
+        >
+          <div
+            class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-white text-2xl">auto_stories</span>
+          </div>
+          <h4 class="font-bold text-brand-brown mb-2">ઉપદેશો</h4>
+          <p class="text-sm text-brand-gray mb-3">૩૮ લેખો</p>
+          <a
+            href="#"
+            class="text-secondary font-semibold text-sm hover:text-secondary-hover"
+            >શોધ કરો →</a
+          >
+        </div>
+
+        <div
+          class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-6 text-center hover-lift cursor-pointer"
+        >
+          <div
+            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-white text-2xl">history_edu</span>
+          </div>
+          <h4 class="font-bold text-brand-brown mb-2">વાર્તાઓ</h4>
+          <p class="text-sm text-brand-gray mb-3">૩૧ લેખો</p>
+          <a
+            href="#"
+            class="text-primary font-semibold text-sm hover:text-primary-hover"
+            >શોધ કરો →</a
+          >
+        </div>
+
+        <div
+          class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-6 text-center hover-lift cursor-pointer"
+        >
+          <div
+            class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <span class="material-icons text-white text-2xl">temple_hindu</span>
+          </div>
+          <h4 class="font-bold text-brand-brown mb-2">સંસ્કૃતિ</h4>
+          <p class="text-sm text-brand-gray mb-3">૧૯ લેખો</p>
+          <a
+            href="#"
+            class="text-secondary font-semibold text-sm hover:text-secondary-hover"
+            >શોધ કરો →</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

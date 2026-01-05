@@ -1,0 +1,175 @@
+---
+import en from "../i18n/en.json";
+import gu from "../i18n/gu.json";
+
+/* Detect locale from URL */
+const pathname = Astro.url.pathname;
+const locale = pathname.startsWith("/gu") ? "gu" : "en";
+
+/* Translation object */
+const t = locale === "gu" ? gu.header : en.header;
+
+/* Base path for links */
+const base = locale === "gu" ? "/gu" : "/en";
+
+/* Path without locale (for active menu + switcher) */
+const cleanPath =
+  pathname.replace(/^\/(en|gu)/, "") || "/";
+---
+
+<!-- Navigation -->
+<nav class="bg-white shadow-md fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 overflow-hidden">
+          <img src="/assets/images/logo.png" alt="ISKCON Varachha Logo" class="w-full h-full object-contain" />
+        </div>
+        <div>
+          <h1 class="text-xl font-bold text-primary">ISKCON Varachha</h1>
+          <p class="text-xs text-brand-brown">Hare Krishna Hare Krishna</p>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8 items-center">
+
+        <a href={`${base}/`} class="nav-link text-gray-700 hover:text-primary font-medium" data-path="/">
+          {t.home}
+        </a>
+
+        <a href={`${base}/events`} class="nav-link text-gray-700 hover:text-primary font-medium" data-path="/events">
+          {t.events}
+        </a>
+
+        <!-- Donate & Seva Dropdown -->
+        <div class="relative group">
+          <button
+            class="flex items-center text-gray-700 hover:text-primary font-medium dropdown-btn"
+            data-paths="/donate,/book-seva">
+            {t.donateSeva}
+            <span class="material-icons text-sm ml-1">expand_more</span>
+          </button>
+
+          <div
+            class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-44 bg-white shadow-lg rounded-xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+            <a href={`${base}/donate`} class="nav-link block px-4 py-3 hover:bg-background-light" data-path="/donate">
+              {t.donate}
+            </a>
+            <a href={`${base}/book-seva`} class="nav-link block px-4 py-3 hover:bg-background-light" data-path="/book-seva">
+              {t.bookSeva}
+            </a>
+          </div>
+        </div>
+
+        <a href={`${base}/about`} class="nav-link text-gray-700 hover:text-primary font-medium" data-path="/about">
+          {t.about}
+        </a>
+
+        <!-- Others Dropdown -->
+        <div class="relative group">
+          <button
+            class="flex items-center text-gray-700 hover:text-primary font-medium dropdown-btn"
+            data-paths="/temple-timings,/daily-programs,/blogs,/contact">
+            {t.others}
+            <span class="material-icons text-sm ml-1">expand_more</span>
+          </button>
+
+          <div
+            class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-52 bg-white shadow-lg rounded-xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+            <a href={`${base}/temple-timings`} class="nav-link block px-4 py-3 hover:bg-background-light" data-path="/temple-timings">
+              {t.templeTimings}
+            </a>
+            <a href={`${base}/daily-programs`} class="nav-link block px-4 py-3 hover:bg-background-light" data-path="/daily-programs">
+              {t.dailyPrograms}
+            </a>
+            <a href={`${base}/blogs`} class="nav-link block px-4 py-3 hover:bg-background-light" data-path="/blogs">
+              {t.blogs}
+            </a>
+            <a href={`${base}/contact`} class="nav-link block px-4 py-3 hover:bg-background-light" data-path="/contact">
+              {t.contact}
+            </a>
+          </div>
+        </div>
+
+        <!-- Language Switcher -->
+        <div class="ml-6 flex space-x-3 text-sm font-semibold">
+          <a href={`/en${cleanPath}`} class={locale === "en" ? "text-primary" : ""}>EN</a>
+          <a href={`/gu${cleanPath}`} class={locale === "gu" ? "text-primary" : ""}>GU</a>
+        </div>
+
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden">
+        <span id="menuIcon" class="material-icons text-primary text-3xl">menu</span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden pb-6">
+
+      <a href={`${base}/`} class="nav-link block py-2 px-4 hover:bg-background-light rounded-lg" data-path="/">
+        {t.home}
+      </a>
+
+      <a href={`${base}/events`} class="nav-link block py-2 px-4 hover:bg-background-light rounded-lg" data-path="/events">
+        {t.events}
+      </a>
+
+      <button onclick="toggleDropdown('mobileDonate')"
+        class="w-full text-left py-2 px-4 flex justify-between items-center dropdown-btn">
+        {t.donateSeva}
+        <span class="material-icons">expand_more</span>
+      </button>
+
+      <div id="mobileDonate" class="hidden pl-6">
+        <a href={`${base}/donate`} class="nav-link block py-2">{t.donate}</a>
+        <a href={`${base}/book-seva`} class="nav-link block py-2">{t.bookSeva}</a>
+      </div>
+
+      <a href={`${base}/about`} class="nav-link block py-2 px-4 hover:bg-background-light rounded-lg">
+        {t.about}
+      </a>
+
+      <button onclick="toggleDropdown('mobileOthers')"
+        class="w-full text-left py-2 px-4 flex justify-between items-center dropdown-btn">
+        {t.others}
+        <span class="material-icons">expand_more</span>
+      </button>
+
+      <div id="mobileOthers" class="hidden pl-6">
+        <a href={`${base}/temple-timings`} class="nav-link block py-2">{t.templeTimings}</a>
+        <a href={`${base}/daily-programs`} class="nav-link block py-2">{t.dailyPrograms}</a>
+        <a href={`${base}/blogs`} class="nav-link block py-2">{t.blogs}</a>
+        <a href={`${base}/contact`} class="nav-link block py-2">{t.contact}</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<script>
+  const currentPath = window.location.pathname.replace(/^\/(en|gu)/, "") || "/";
+
+  document.querySelectorAll(".nav-link").forEach(link => {
+    if (link.dataset.path === currentPath) {
+      link.classList.add("text-primary", "font-semibold");
+    }
+  });
+
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const menuIcon = document.getElementById("menuIcon");
+
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    menuIcon.textContent = mobileMenu.classList.contains("hidden") ? "menu" : "close";
+  });
+
+  function toggleDropdown(id) {
+    document.getElementById(id).classList.toggle("hidden");
+  }
+</script>

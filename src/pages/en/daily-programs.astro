@@ -1,0 +1,337 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { seoData } from "../../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.dailyPrograms;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <section
+    class="pt-20 pb-16 md:pt-28 md:pb-20 bg-gradient-to-br from-background-light via-white to-background-section relative overflow-hidden"
+  >
+    <!-- Decorative elements -->
+    <div
+      class="absolute top-10 left-10 w-24 h-24 bg-primary/5 rounded-full blur-xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-10 right-10 w-32 h-32 bg-brand-saffron/5 rounded-full blur-xl"
+    >
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <div
+        class="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-secondary/10 rounded-full"
+      >
+        <span class="material-icons text-secondary text-sm">event_repeat</span>
+        <span class="text-secondary text-sm font-medium">Daily Activities</span>
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="block text-gray-900">Daily Spiritual Programs</span>
+        <span
+          class="text-transparent bg-gradient-to-r from-secondary to-primary bg-clip-text"
+          >For All Devotees</span
+        >
+      </h1>
+
+      <p class="text-xl text-brand-gray max-w-3xl mx-auto mb-8 leading-relaxed">
+        Participate in uplifting daily spiritual activities that nourish the
+        soul and strengthen devotion to Sri Sri Radha Gopal Ji.
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="py-16 md:py-20 bg-gradient-to-b from-white to-background-light/30"
+  >
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          Regular Programs
+        </h2>
+        <p class="text-brand-gray text-lg max-w-2xl mx-auto">
+          Join these daily spiritual activities open to all devotees
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Program 1 -->
+        <div
+          class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-primary/20 hover:-translate-y-2"
+        >
+          <div
+            class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"
+          >
+            <span class="material-icons text-primary text-4xl">music_note</span>
+          </div>
+
+          <div class="text-center">
+            <h4 class="text-2xl font-bold text-brand-brown mb-3">
+              Morning & Evening Kirtan
+            </h4>
+            <p class="text-brand-gray mb-6 leading-relaxed">
+              Daily congregational chanting of the Holy Names. Experience the
+              ecstasy of devotional singing with fellow devotees.
+            </p>
+
+            <div class="flex flex-col items-center space-y-4">
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-primary">schedule</span>
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    Morning: 8:30 AM
+                  </div>
+                  <div class="text-sm text-brand-gray">After Guru Puja</div>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-primary">schedule</span>
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    Evening: 8:00 PM
+                  </div>
+                  <div class="text-sm text-brand-gray">After Sandhya Aarti</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div
+          class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-primary/20 hover:-translate-y-2"
+        >
+          <div
+            class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"
+          >
+            <span class="material-icons text-secondary text-4xl">menu_book</span
+            >
+          </div>
+
+          <div class="text-center">
+            <h4 class="text-2xl font-bold text-brand-brown mb-3">
+              Scripture Classes
+            </h4>
+            <p class="text-brand-gray mb-6 leading-relaxed">
+              Deep dive into the eternal wisdom of Bhagavad Gita and Srimad
+              Bhagavatam with experienced devotees.
+            </p>
+
+            <div class="flex flex-col items-center space-y-4">
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-secondary">book</span>
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    Bhagavad Gita
+                  </div>
+                  <div class="text-sm text-brand-gray">Daily: 7:30 PM</div>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-secondary">auto_stories</span>
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    Srimad Bhagavatam
+                  </div>
+                  <div class="text-sm text-brand-gray">Tuesday: 6:30 PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 3 -->
+        <div
+          class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-primary/20 hover:-translate-y-2"
+        >
+          <div
+            class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"
+          >
+            <span class="material-icons text-primary text-4xl">restaurant</span>
+          </div>
+
+          <div class="text-center">
+            <h4 class="text-2xl font-bold text-brand-brown mb-3">
+              Prasadam Distribution
+            </h4>
+            <p class="text-brand-gray mb-6 leading-relaxed">
+              Sanctified vegetarian meals offered to the deities. Experience the
+              mercy of Sri Sri Radha Gopal Ji through spiritual food.
+            </p>
+
+            <div class="flex flex-col items-center space-y-4">
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-primary">breakfast_dining</span
+                >
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    Morning Prasadam
+                  </div>
+                  <div class="text-sm text-brand-gray">8:45 AM - 9:30 AM</div>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-primary">dinner_dining</span>
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    Evening Prasadam
+                  </div>
+                  <div class="text-sm text-brand-gray">8:15 PM - 8:45 PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Programs -->
+      <div class="mt-20">
+        <div class="text-center mb-12">
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Additional Activities
+          </h3>
+          <p class="text-brand-gray text-lg max-w-2xl mx-auto">
+            Other regular spiritual programs you can participate in
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-2xl mb-4 mx-auto"
+            >
+              <span class="material-icons text-secondary text-3xl"
+                >volunteer_activism</span
+              >
+            </div>
+            <h4 class="font-bold text-brand-brown mb-2">Deity Seva</h4>
+            <p class="text-brand-gray text-sm">Assist in temple services</p>
+            <div class="mt-3 text-sm text-primary font-medium">
+              Daily opportunities
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl mb-4 mx-auto"
+            >
+              <span class="material-icons text-primary text-3xl">translate</span
+              >
+            </div>
+            <h4 class="font-bold text-brand-brown mb-2">Sanskrit Classes</h4>
+            <p class="text-brand-gray text-sm">
+              Learn Vedic scriptures language
+            </p>
+            <div class="mt-3 text-sm text-primary font-medium">
+              Saturday: 4 PM
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-2xl mb-4 mx-auto"
+            >
+              <span class="material-icons text-secondary text-3xl"
+                >family_restroom</span
+              >
+            </div>
+            <h4 class="font-bold text-brand-brown mb-2">Family Programs</h4>
+            <p class="text-brand-gray text-sm">
+              Activities for all family members
+            </p>
+            <div class="mt-3 text-sm text-primary font-medium">
+              Sunday: 10 AM
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl mb-4 mx-auto"
+            >
+              <span class="material-icons text-primary text-3xl">people</span>
+            </div>
+            <h4 class="font-bold text-brand-brown mb-2">Youth Forum</h4>
+            <p class="text-brand-gray text-sm">
+              Spiritual discussions & activities
+            </p>
+            <div class="mt-3 text-sm text-primary font-medium">
+              Saturday: 5 PM
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div
+        class="mt-20 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/10"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-8"
+        >
+          <div class="text-center md:text-left">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm"
+              >
+                <span class="material-icons text-primary text-2xl"
+                  >calendar_month</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold text-brand-brown">
+                Want to Schedule a Visit?
+              </h3>
+            </div>
+            <p class="text-brand-gray max-w-2xl">
+              Plan your visit to coincide with your favorite programs. Check our
+              full temple timings for detailed schedule.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/timings"
+              class="px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 hover:shadow-lg flex items-center justify-center gap-2"
+            >
+              <span class="material-icons">schedule</span>
+              View Full Timings
+            </a>
+            <a
+              href="/contact"
+              class="px-6 py-3 bg-white text-primary border-2 border-primary/20 rounded-xl font-semibold hover:bg-primary/5 transition-all duration-300 flex items-center justify-center gap-2"
+            >
+              <span class="material-icons">contact_support</span>
+              Contact for Info
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

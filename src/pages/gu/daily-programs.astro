@@ -1,0 +1,332 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { seoData } from "../../data/seoData.js";
+const { meta_title, meta_description, current_page } = seoData.dailyPrograms;
+---
+
+<Layout
+  title={meta_title}
+  description={meta_description}
+  currentPage={current_page}
+>
+  <section
+    class="pt-20 pb-16 md:pt-28 md:pb-20 bg-gradient-to-br from-background-light via-white to-background-section relative overflow-hidden"
+  >
+    <!-- સુશોભન તત્વો -->
+    <div
+      class="absolute top-10 left-10 w-24 h-24 bg-primary/5 rounded-full blur-xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-10 right-10 w-32 h-32 bg-brand-saffron/5 rounded-full blur-xl"
+    >
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <div
+        class="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-secondary/10 rounded-full"
+      >
+        <span class="material-icons text-secondary text-sm">event_repeat</span>
+        <span class="text-secondary text-sm font-medium">દૈનિક પ્રવૃત્તિઓ</span>
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="block text-gray-900">દૈનિક આધ્યાત્મિક કાર્યક્રમો</span>
+        <span
+          class="text-transparent bg-gradient-to-r from-secondary to-primary bg-clip-text"
+          >બધા ભક્તો માટે</span
+        >
+      </h1>
+
+      <p class="text-xl text-brand-gray max-w-3xl mx-auto mb-8 leading-relaxed">
+        આત્માને પોષણ આપતી અને શ્રી શ્રી રાધા ગોપાલ જી પ્રત્યેની ભક્તિને મજબૂત કરતી ઉત્તેજક દૈનિક આધ્યાત્મિક પ્રવૃત્તિઓમાં ભાગ લો.
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="py-16 md:py-20 bg-gradient-to-b from-white to-background-light/30"
+  >
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          નિયમિત કાર્યક્રમો
+        </h2>
+        <p class="text-brand-gray text-lg max-w-2xl mx-auto">
+          બધા ભક્તો માટે ખુલ્લી આ દૈનિક આધ્યાત્મિક પ્રવૃત્તિઓમાં જોડાઓ
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- કાર્યક્રમ 1 -->
+        <div
+          class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-primary/20 hover:-translate-y-2"
+        >
+          <div
+            class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"
+          >
+            <span class="material-icons text-primary text-4xl">music_note</span>
+          </div>
+
+          <div class="text-center">
+            <h4 class="text-2xl font-bold text-brand-brown mb-3">
+              સવાર અને સાંજનું કીર્તન
+            </h4>
+            <p class="text-brand-gray mb-6 leading-relaxed">
+              પવિત્ર નામોનું દૈનિક સામૂહિક જપ. સાથી ભક્તો સાથે ભક્તિપૂર્ણ ગાયનનો પરમાનંદ અનુભવો.
+            </p>
+
+            <div class="flex flex-col items-center space-y-4">
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-primary">schedule</span>
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    સવાર: ૮:૩૦ AM
+                  </div>
+                  <div class="text-sm text-brand-gray">ગુરુ પૂજા પછી</div>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-primary">schedule</span>
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    સાંજ: ૮:૦૦ PM
+                  </div>
+                  <div class="text-sm text-brand-gray">સંધ્યા આરતી પછી</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- કાર્યક્રમ 2 -->
+        <div
+          class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-primary/20 hover:-translate-y-2"
+        >
+          <div
+            class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"
+          >
+            <span class="material-icons text-secondary text-4xl">menu_book</span
+            >
+          </div>
+
+          <div class="text-center">
+            <h4 class="text-2xl font-bold text-brand-brown mb-3">
+              શાસ્ત્ર વર્ગો
+            </h4>
+            <p class="text-brand-gray mb-6 leading-relaxed">
+              ભગવદ્ ગીતા અને શ્રીમદ્ ભાગવતમના શાશ્વત જ્ઞાનમાં અનુભવી ભક્તો સાથે ઊંડી ડૂબકી.
+            </p>
+
+            <div class="flex flex-col items-center space-y-4">
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-secondary">book</span>
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    ભગવદ્ ગીતા
+                  </div>
+                  <div class="text-sm text-brand-gray">દૈનિક: ૭:૩૦ PM</div>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-secondary">auto_stories</span>
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    શ્રીમદ્ ભાગવતમ
+                  </div>
+                  <div class="text-sm text-brand-gray">મંગળવાર: ૬:૩૦ PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- કાર્યક્રમ 3 -->
+        <div
+          class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-brand-brown/5 hover:border-primary/20 hover:-translate-y-2"
+        >
+          <div
+            class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"
+          >
+            <span class="material-icons text-primary text-4xl">restaurant</span>
+          </div>
+
+          <div class="text-center">
+            <h4 class="text-2xl font-bold text-brand-brown mb-3">
+              પ્રસાદ વિતરણ
+            </h4>
+            <p class="text-brand-gray mb-6 leading-relaxed">
+              દેવતાઓને અર્પિત શુદ્ધ શાકાહારી ભોજન. આધ્યાત્મિક ખોરાક દ્વારા શ્રી શ્રી રાધા ગોપાલ જીની કૃપાનો અનુભવ કરો.
+            </p>
+
+            <div class="flex flex-col items-center space-y-4">
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-primary">breakfast_dining</span
+                >
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    સવારનો પ્રસાદ
+                  </div>
+                  <div class="text-sm text-brand-gray">૮:૪૫ AM - ૯:૩૦ AM</div>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center gap-3 px-4 py-2 bg-background-light rounded-xl"
+              >
+                <span class="material-icons text-primary">dinner_dining</span>
+                <div class="text-left">
+                  <div class="font-semibold text-brand-brown">
+                    સાંજનો પ્રસાદ
+                  </div>
+                  <div class="text-sm text-brand-gray">૮:૧૫ PM - ૮:૪૫ PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- વધારાના કાર્યક્રમો -->
+      <div class="mt-20">
+        <div class="text-center mb-12">
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            વધારાની પ્રવૃત્તિઓ
+          </h3>
+          <p class="text-brand-gray text-lg max-w-2xl mx-auto">
+            અન્ય નિયમિત આધ્યાત્મિક કાર્યક્રમો જેમાં તમે ભાગ લઈ શકો છો
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-2xl mb-4 mx-auto"
+            >
+              <span class="material-icons text-secondary text-3xl"
+                >volunteer_activism</span
+              >
+            </div>
+            <h4 class="font-bold text-brand-brown mb-2">દેવતા સેવા</h4>
+            <p class="text-brand-gray text-sm">મંદિર સેવાઓમાં સહાય કરો</p>
+            <div class="mt-3 text-sm text-primary font-medium">
+              દૈનિક તકો
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl mb-4 mx-auto"
+            >
+              <span class="material-icons text-primary text-3xl">translate</span
+              >
+            </div>
+            <h4 class="font-bold text-brand-brown mb-2">સંસ્કૃત વર્ગો</h4>
+            <p class="text-brand-gray text-sm">
+              વૈદિક શાસ્ત્રોની ભાષા શીખો
+            </p>
+            <div class="mt-3 text-sm text-primary font-medium">
+              શનિવાર: ૪ PM
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-2xl mb-4 mx-auto"
+            >
+              <span class="material-icons text-secondary text-3xl"
+                >family_restroom</span
+              >
+            </div>
+            <h4 class="font-bold text-brand-brown mb-2">કુટુંબ કાર્યક્રમો</h4>
+            <p class="text-brand-gray text-sm">
+              બધા કુટુંબ સભ્યો માટે પ્રવૃત્તિઓ
+            </p>
+            <div class="mt-3 text-sm text-primary font-medium">
+              રવિવાર: ૧૦ AM
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl mb-4 mx-auto"
+            >
+              <span class="material-icons text-primary text-3xl">people</span>
+            </div>
+            <h4 class="font-bold text-brand-brown mb-2">યુવા મંચ</h4>
+            <p class="text-brand-gray text-sm">
+              આધ્યાત્મિક ચર્ચાઓ અને પ્રવૃત્તિઓ
+            </p>
+            <div class="mt-3 text-sm text-primary font-medium">
+              શનિવાર: ૫ PM
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA વિભાગ -->
+      <div
+        class="mt-20 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/10"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-8"
+        >
+          <div class="text-center md:text-left">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm"
+              >
+                <span class="material-icons text-primary text-2xl"
+                  >calendar_month</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold text-brand-brown">
+                મુલાકાતની યોજના બનાવવી છે?
+              </h3>
+            </div>
+            <p class="text-brand-gray max-w-2xl">
+              તમારી પસંદગીના કાર્યક્રમો સાથે સુસંગત તમારી મુલાકાતની યોજના બનાવો. વિગતવાર શેડ્યૂલ માટે અમારા સંપૂર્ણ મંદિર સમય તપાસો.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/timings"
+              class="px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-hover transition-all duration-300 hover:shadow-lg flex items-center justify-center gap-2"
+            >
+              <span class="material-icons">schedule</span>
+              સંપૂર્ણ સમય જુઓ
+            </a>
+            <a
+              href="/contact"
+              class="px-6 py-3 bg-white text-primary border-2 border-primary/20 rounded-xl font-semibold hover:bg-primary/5 transition-all duration-300 flex items-center justify-center gap-2"
+            >
+              <span class="material-icons">contact_support</span>
+              માહિતી માટે સંપર્ક કરો
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
