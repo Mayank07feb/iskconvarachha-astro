@@ -9,8 +9,8 @@ const locale = pathname.startsWith("/gu") ? "gu" : "en";
 /* Translation object */
 const t = locale === "gu" ? gu.footer : en.footer;
 
-/* Base path */
-const base = locale === "gu" ? "/gu" : "/en";
+/* Base path (EN = /, GU = /gu) */
+const base = locale === "gu" ? "/gu" : "";
 ---
 
 <!-- Footer Section -->

@@ -1,4 +1,6 @@
 ---
+export const prerender = false; // ✅ enables SSR
+
 import Layout from "../layouts/Layout.astro";
 import { seoData } from "../data/seoData.js";
 const { meta_title, meta_description, current_page } = seoData.blogs;
