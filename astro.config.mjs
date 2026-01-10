@@ -4,19 +4,15 @@ import node from "@astrojs/node";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  output: "server", // SSR enabled
+  output: "server", // 👈 ENABLE SSR
 
   adapter: node({
     mode: "standalone",
   }),
 
-  // ✅ i18n config (NO /en prefix)
   i18n: {
-    defaultLocale: "en",      // English = /
+    defaultLocale: "en",
     locales: ["en", "gu", "hi"],
-    routing: {
-      prefixDefaultLocale: false, // 👈 THIS IS THE KEY LINE
-    },
   },
 
   vite: {
