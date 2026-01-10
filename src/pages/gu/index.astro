@@ -764,6 +764,130 @@ const { meta_title, meta_description, current_page } = seoData.home;
     </div>
   </section>
 
+  <!-- Viplav યુવા મહોત્સવ વિડિઓ વિભાગ -->
+<section class="py-20 bg-gradient-to-b from-white to-background-light">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        <span class="gradient-text">વિપ્લવ યુવા મહોત્સવ</span>
+      </h2>
+      <div
+        class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6"
+      ></div>
+      <p class="text-lg text-brand-gray max-w-2xl mx-auto">
+        વૈદિક જ્ઞાન દ્વારા ચેતનાનું રૂપાંતર કરતું ક્રાંતિકારી યુવા આંદોલનનો અનુભવ કરો
+      </p>
+    </div>
+
+    <!-- ફુલ વિડ્થ વિપ્લવ વિડિઓ -->
+    <div class="relative overflow-hidden rounded-3xl shadow-2xl mb-8 group">
+      <!-- વિડિઓ કન્ટેનર -->
+      <div class="relative pt-[56.25%] bg-black">
+        <!-- 16:9 એસ્પેક્ટ રેશિયો -->
+        <!-- વિડિઓ પ્લેસહોલ્ડર/થમ્બનેલ -->
+        <div id="viplavVideoPlaceholder" class="absolute inset-0">
+          <img
+            src="/assets/images/viplav-video-thumbnail.jpg"
+            alt="વિપ્લવ યુવા મહોત્સવ"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent"
+          ></div>
+
+          <!-- વિપ્લવ ઓવરલે સામગ્રી -->
+          <div class="absolute bottom-8 left-8 right-8">
+            <div class="inline-block px-4 py-2 bg-gradient-to-r from-primary/90 to-secondary/90 backdrop-blur-sm rounded-full mb-4">
+              <p class="text-white font-semibold text-sm uppercase tracking-wider">
+                ઇસ્કોન યુવા ફોરમ
+              </p>
+            </div>
+            <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">
+              વિપ્લવ: ચેતના દ્વારા ક્રાંતિ
+            </h3>
+            <p class="text-white/90 text-sm md:text-base">
+              કીર્તન, આધ્યાત્મિક પ્રવચનો અને સાંસ્કૃતિક કાર્યક્રમો સાથેનો વિરાટ યુવા મહોત્સવ
+            </p>
+          </div>
+
+          <!-- પ્લે બટન -->
+          <button
+            id="playViplavVideo"
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-24 md:h-24 bg-white/90 hover:bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-2xl"
+          >
+            <span class="material-icons text-primary text-4xl md:text-5xl ml-2">
+              play_arrow
+            </span>
+          </button>
+        </div>
+
+        <!-- વિડિઓ પ્લેયર (પ્રારંભમાં છુપાયેલ) -->
+        <iframe
+          id="viplavVideoPlayer"
+          src="/assets/videos/video-1.mp4?autoplay=0&mute=1"
+          title="વિપ્લવ યુવા મહોત્સવ"
+          class="absolute top-0 left-0 w-full h-full hidden"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- વિપ્લવ વર્ણન -->
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="text-brand-gray mb-6">
+        વિપ્લવ ઇસ્કોન યુવા ફોરમ (IYF) દ્વારા ચલાવવામાં આવતું એક પરિવર્તનકારી આંદોલન છે જે હજારો 
+        યુવા મનને ભગવદ્ ગીતાના સિદ્ધાંતો, જીવંત કીર્તન, આધ્યાત્મિક પ્રવચનો અને સાંસ્કૃતિક 
+        પ્રવૃત્તિઓ દ્વારા કૃષ્ણ ચેતનાના સાથે જોડે છે.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 text-sm text-brand-gray">
+        <span class="flex items-center">
+          <span class="material-icons text-primary text-sm mr-1">groups</span>
+          યુવા આંદોલન
+        </span>
+        <span class="flex items-center">
+          <span class="material-icons text-secondary text-sm mr-1">music_note</span>
+          કીર્તન અને સંસ્કૃતિ
+        </span>
+        <span class="flex items-center">
+          <span class="material-icons text-primary text-sm mr-1">menu_book</span>
+          ગીતા સિદ્ધાંતો
+        </span>
+        <span class="flex items-center">
+          <span class="material-icons text-secondary text-sm mr-1">festival</span>
+          વિશાળ સમાગમ
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // વિપ્લવ વિડિઓ પ્લે કાર્યક્ષમતા
+    document
+      .getElementById("playViplavVideo")
+      .addEventListener("click", function () {
+        const placeholder = document.getElementById("viplavVideoPlaceholder");
+        const videoPlayer = document.getElementById("viplavVideoPlayer");
+        const playButton = this;
+
+        // પ્લેસહોલ્ડર છુપાવો અને વિડિઓ બતાવો
+        placeholder.style.display = "none";
+        videoPlayer.classList.remove("hidden");
+        videoPlayer.classList.add("block");
+
+        // વિડિઓ URL ને ઓટોપ્લે માટે બદલો
+        const currentSrc = videoPlayer.src;
+        if (!currentSrc.includes("autoplay=1")) {
+          videoPlayer.src = currentSrc.replace("autoplay=0", "autoplay=1");
+        }
+
+        // પ્લે બટન છુપાવો
+        playButton.style.display = "none";
+      });
+  </script>
+</section>
+
   <script>
     let currentSlide = 0;
     const slides = document.querySelectorAll(".slide");
