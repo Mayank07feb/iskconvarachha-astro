@@ -14,6 +14,7 @@ export default defineConfig({
     defaultLocale: "en",
     locales: ["en", "gu", "hi"],
   },
+  
 
   vite: {
     plugins: [tailwindcss()],
