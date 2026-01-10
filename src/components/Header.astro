@@ -9,12 +9,11 @@ const locale = pathname.startsWith("/gu") ? "gu" : "en";
 /* Translation object */
 const t = locale === "gu" ? gu.header : en.header;
 
-/* Base path (EN = /, GU = /gu) */
+/* Base path for links (English = '', Gujarati = '/gu') */
 const base = locale === "gu" ? "/gu" : "";
 
-/* Path without locale (for active menu + switcher) */
-const cleanPath =
-  pathname.replace(/^\/(en|gu)/, "") || "/";
+/* Path without locale for active menu + language switcher */
+const cleanPath = pathname.replace(/^\/gu/, "") || "/";
 ---
 
 <!-- Navigation -->
@@ -33,9 +32,7 @@ const cleanPath =
         </div>
         <div>
           <h1 class="text-xl font-bold text-primary">ISKCON Varachha</h1>
-          <p class="text-xs text-brand-brown">
-            Hare Krishna Hare Krishna
-          </p>
+          <p class="text-xs text-brand-brown">Hare Krishna Hare Krishna</p>
         </div>
       </div>
 
@@ -106,7 +103,7 @@ const cleanPath =
 
         <!-- Language Switcher -->
         <div class="ml-6 flex space-x-3 text-sm font-semibold">
-          <a href={`${cleanPath}`} class={locale === "en" ? "text-primary" : ""}>EN</a>
+          <a href={cleanPath} class={locale === "en" ? "text-primary" : ""}>EN</a>
           <a href={`/gu${cleanPath}`} class={locale === "gu" ? "text-primary" : ""}>GU</a>
         </div>
 
@@ -164,8 +161,7 @@ const cleanPath =
 </nav>
 
 <script>
-  const currentPath =
-    window.location.pathname.replace(/^\/(en|gu)/, "") || "/";
+  const currentPath = window.location.pathname.replace(/^\/gu/, "") || "/";
 
   document.querySelectorAll(".nav-link").forEach(link => {
     if (link.dataset.path === currentPath) {
@@ -179,9 +175,7 @@ const cleanPath =
 
   mobileMenuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
-    menuIcon.textContent = mobileMenu.classList.contains("hidden")
-      ? "menu"
-      : "close";
+    menuIcon.textContent = mobileMenu.classList.contains("hidden") ? "menu" : "close";
   });
 
   function toggleDropdown(id) {
