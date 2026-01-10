@@ -9,11 +9,12 @@ const locale = pathname.startsWith("/gu") ? "gu" : "en";
 /* Translation object */
 const t = locale === "gu" ? gu.header : en.header;
 
-/* Base path for links (English = '', Gujarati = '/gu') */
-const base = locale === "gu" ? "/gu" : "";
+/* Base path for links */
+const base = locale === "gu" ? "/gu" : "/en";
 
-/* Path without locale for active menu + language switcher */
-const cleanPath = pathname.replace(/^\/gu/, "") || "/";
+/* Path without locale (for active menu + switcher) */
+const cleanPath =
+  pathname.replace(/^\/(en|gu)/, "") || "/";
 ---
 
 <!-- Navigation -->
@@ -24,11 +25,7 @@ const cleanPath = pathname.replace(/^\/gu/, "") || "/";
       <!-- Logo -->
       <div class="flex items-center space-x-3">
         <div class="w-12 h-12 overflow-hidden">
-          <img
-            src="/assets/images/logo.png"
-            alt="ISKCON Varachha Logo"
-            class="w-full h-full object-contain"
-          />
+          <img src="/assets/images/logo.png" alt="ISKCON Varachha Logo" class="w-full h-full object-contain" />
         </div>
         <div>
           <h1 class="text-xl font-bold text-primary">ISKCON Varachha</h1>
@@ -57,9 +54,7 @@ const cleanPath = pathname.replace(/^\/gu/, "") || "/";
           </button>
 
           <div
-            class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-44 bg-white shadow-lg rounded-xl
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200
-                   z-50 border border-gray-100">
+            class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-44 bg-white shadow-lg rounded-xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 border border-gray-100">
             <a href={`${base}/donate`} class="nav-link block px-4 py-3 hover:bg-background-light" data-path="/donate">
               {t.donate}
             </a>
@@ -83,9 +78,7 @@ const cleanPath = pathname.replace(/^\/gu/, "") || "/";
           </button>
 
           <div
-            class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-52 bg-white shadow-lg rounded-xl
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200
-                   z-50 border border-gray-100">
+            class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-52 bg-white shadow-lg rounded-xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 border border-gray-100">
             <a href={`${base}/temple-timings`} class="nav-link block px-4 py-3 hover:bg-background-light" data-path="/temple-timings">
               {t.templeTimings}
             </a>
@@ -103,7 +96,7 @@ const cleanPath = pathname.replace(/^\/gu/, "") || "/";
 
         <!-- Language Switcher -->
         <div class="ml-6 flex space-x-3 text-sm font-semibold">
-          <a href={cleanPath} class={locale === "en" ? "text-primary" : ""}>EN</a>
+          <a href={`/en${cleanPath}`} class={locale === "en" ? "text-primary" : ""}>EN</a>
           <a href={`/gu${cleanPath}`} class={locale === "gu" ? "text-primary" : ""}>GU</a>
         </div>
 
@@ -126,8 +119,7 @@ const cleanPath = pathname.replace(/^\/gu/, "") || "/";
         {t.events}
       </a>
 
-      <button
-        onclick="toggleDropdown('mobileDonate')"
+      <button onclick="toggleDropdown('mobileDonate')"
         class="w-full text-left py-2 px-4 flex justify-between items-center dropdown-btn">
         {t.donateSeva}
         <span class="material-icons">expand_more</span>
@@ -142,8 +134,7 @@ const cleanPath = pathname.replace(/^\/gu/, "") || "/";
         {t.about}
       </a>
 
-      <button
-        onclick="toggleDropdown('mobileOthers')"
+      <button onclick="toggleDropdown('mobileOthers')"
         class="w-full text-left py-2 px-4 flex justify-between items-center dropdown-btn">
         {t.others}
         <span class="material-icons">expand_more</span>
@@ -161,7 +152,7 @@ const cleanPath = pathname.replace(/^\/gu/, "") || "/";
 </nav>
 
 <script>
-  const currentPath = window.location.pathname.replace(/^\/gu/, "") || "/";
+  const currentPath = window.location.pathname.replace(/^\/(en|gu)/, "") || "/";
 
   document.querySelectorAll(".nav-link").forEach(link => {
     if (link.dataset.path === currentPath) {
